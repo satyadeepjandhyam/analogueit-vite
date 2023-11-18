@@ -200,43 +200,36 @@ function Home() {
                 </div>
            </div>
            </div>
-            {/* <img className='banner_logo' src={logo1} alt="logo" />
-            <img className='banner_frame' src={Frame} alt="logo" />
-            <button className='banner_btn'>KNOW MORE</button> */}
-           {/* <div className='animation_page'>
-            <div className="animationDiv">
-                    {bannerImages.map((items,i)=>{return <img src={items.image} key={i} alt="htmlpng" />})}
-                </div>
-           </div> */}
+            
         </section>
-            {/* <section ref={aboutHeadding} className="about container-fluid d-flex flex-column align-items-center justify-content-center">
-                <div className={isAboutHeaddingRevealed? "about_headding container-fluid d-flex flex-column align-items-center justify-content-center mb-5 ":""} >
+            <section ref={aboutHeadding} className="about">
+                <div className={isAboutHeaddingRevealed? "about_headding":""} >
 
                     <h1>About</h1> <img  src={blueLogo} alt="blueLogo" />
 
                 </div>
                 <div className="aboutbody row d-flex flex-row align-items-center justify-content-center">
-                    <img className={isAboutHeaddingRevealed? "img1 col-lg-6 img-fluid":""} src={aboutImg} alt="aboutImg" />
-                    <div className={isAboutHeaddingRevealed? "aboucontent col-lg-6 ":""}>
+                    <img className={isAboutHeaddingRevealed? "img1 ":""} src={aboutImg} alt="aboutImg" />
+                    <div className={isAboutHeaddingRevealed? "aboucontent  ":""}>
                         <h1>What We Do?</h1>
                         <p>Analogue IT solutions is an exceptional Web Development Service Provider company in Hyderabad. We provide Web Designing Services, Mobile Application Development Services, and Digital Marketing services in Hyderabad. We keep up the promise and according to which we provide the best software quality assurance with a great maintenance support team.</p>
                         <p>Analogue IT solutions provide creative and dynamic Services of Web Development and Digital Marketing. We have gained rich expertise in building business-critical mobile and web products. We make complex art of Web development in a very simple, efficient and attractive manner.
                         </p>
                     </div>
                 </div>
-            </section> */}
-            <section className="services position-relative container-fluid p-0 mt-5 mb-5">
+            </section>
+            <section className="services position-relative container-fluid   p-0 mt-5 mb-5">
                 <img src={servicesBackGroundImg} alt="" className="servicesBackground col-12 p-0 m-0 position-absolute img-fluid object-fit-contain" />
                 <div className="cards container-fluid position-relative d-flex flex-column align-items-center justify-content-center">
                     <div className="p-4 m-5 text-white"><h1>Our servies</h1></div>
                     <div className="cardsBody container-fluid align-items-center justify-content-center row column-gap-5 row-gap-5">
                        {serviceItems.map((items,i)=>{
-                            return  <div key={i} className="card col-lg-3 col-md-3  d-flex align-items-center justify-content-start row-gap-5">
+                            return  <div key={i} className="card col-lg-3 col-md-3  d-flex ">
                             <div className="cardHeadding "><a className='nav-link text-white d-flex align-items-center justify-content-center' href="#">{items.headding}</a></div>
                             <div className="cardBody d-flex flex-column align-items-center justify-content-center h-75">
                                 <img src={items.image} alt="" />
-                                <h1 className="text-center">{items.headding}</h1>
-                                <p className="text-center">{items.content}</p>
+                                <h1 className="text-center ">{items.headding}</h1>
+                                <p className="text-center ">{items.content}</p>
                             </div>
                         </div>
                        })}

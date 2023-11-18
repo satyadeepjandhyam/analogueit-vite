@@ -77,52 +77,7 @@ body{
    
     max-height: 100%;
   }
-  @media only screen and (min-width: 1024px) and (max-width: 1365px)  {
-    .exp{
-      position: absolute;
-      z-index: 10;
-      top: 25%;
-      left: 57%;
-      height: 50%;
-      /* background-color: yellow; */
-      display: flex;
-      align-items: start;
-      justify-content: end;
-    }
-    .exp .banner_frame{
-     
-      height: 100%;
-    }
-    .animation_page{
-      position: absolute;
-      z-index: -0;
-      top: 63% !important;
-      /* bottom: 200px;
-      left: 500px; */
-      width: 500px;
-      height: 60px !important;
-      background-color: rgb(246, 243, 243);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-      padding: 3px;
-      border-radius: 50px;
-      column-gap: 30px;
-    }
-    .animationDiv{
-      position: relative;
-      left: 500px;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      /* justify-content: center; */
-      column-gap: 30px;
-      /* background-color: rgb(95, 27, 27); */
-      animation: move-rtl 30s linear infinite;
-    }
-    
-  }
+
   .animation_page{
     position: absolute;
     z-index: -0;
@@ -170,9 +125,13 @@ body{
     background-color: transparent;
     margin-bottom: 20px;
     border: none;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    row-gap: 30px;
 }
 .cardHeadding{
-    height: 10%;
+    height: 15%;
     background-color: transparent;
     border: 1px solid white;
     width: 100%;
@@ -198,4 +157,261 @@ body{
     background-color: white;
     /* height: 70%; */
     border-radius: 10px;
+}
+.cardBody h1{
+  font-size: var(1rem);
+}
+
+/* about csss */
+.about{
+  position: relative;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 20px;
+  height: 100vh;
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+  overflow: hidden;
+}
+.about .about_headding{
+ 
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+  width: 100%;
+  height: 20%; 
+  transform: translateY(-200px);
+  animation: aboutanimation 1s ease-out;
+  animation-fill-mode: forwards;
+ 
+}
+@keyframes aboutanimation{
+  from{
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+
+.about .aboutbody{
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+}
+.about .aboutbody .img1{
+ 
+  height: 70%;
+  width: 50%;
+  opacity: 0;
+  animation: thorughRight 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes thorughRight{
+  0%{
+    opacity: 1;
+    transform: translateX(-900px);
+  }
+  85%{
+    opacity: 1;
+    transform: translateX(-5px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(5px);
+  }
+}
+.about .aboutbody .aboucontent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  opacity: 0;
+  animation: thorughleft 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes thorughleft{
+  0%{
+    opacity: 1;
+    transform: translateX(900px);
+  }
+  85%{
+    opacity: 1;
+    transform: translateX(5px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(-5px);
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1365px)  {
+  .exp{
+    position: absolute;
+    z-index: 10;
+    top: 25%;
+    left: 57%;
+    height: 50%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: start;
+    justify-content: end;
+  }
+  .exp .banner_frame{
+   
+    height: 100%;
+  }
+  .animation_page{
+    position: absolute;
+    z-index: -0;
+    top: 63% !important;
+    /* bottom: 200px;
+    left: 500px; */
+    width: 500px;
+    height: 60px !important;
+    background-color: rgb(246, 243, 243);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 3px;
+    border-radius: 50px;
+    column-gap: 30px;
+  }
+  .animationDiv{
+    position: relative;
+    left: 500px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    column-gap: 30px;
+    /* background-color: rgb(95, 27, 27); */
+    animation: move-rtl 30s linear infinite;
+  }
+  .cardsBody{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px !important;
+  }
+  .cardsBody .card{
+    height: 300px;
+    margin-bottom: 20px;
+    border: none;
+  }
+  
+.cardHeadding{
+    height: 15%;
+    background-color: transparent;
+    border: 1px solid white;
+    width: 100%;
+    border-radius: 10px;
+    
+}
+.cardHeadding a{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+/* .cardHeadding:hover a{
+   color: black !important;
+   background-color: white;
+   border-radius: 10px;
+   
+}
+.cardHeadding:hover{
+    border: none;
+} */
+.cardBody{
+    background-color: white;
+    /* height: 70%; */
+    border-radius: 10px;
+}
+.cardBody h1{
+  font-size: 20px;
+}
+.about{
+  position: relative;
+  top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 20px;
+  height: 100vh;
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+  overflow: hidden;
+}
+.about .aboutbody .aboucontent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  opacity: 0;
+  animation: thorughleft 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+.about .aboutbody{
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+}
+.about .aboutbody .img1{
+ 
+  height: 70%;
+  width: 50%;
+  opacity: 0;
+  animation: thorughRight 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes thorughleft{
+  0%{
+    opacity: 1;
+    transform: translateX(900px);
+  }
+  85%{
+    opacity: 1;
+    transform: translateX(5px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(-5px);
+  }
+}
+@keyframes thorughRight{
+  0%{
+    opacity: 1;
+    transform: translateX(-900px);
+  }
+  85%{
+    opacity: 1;
+    transform: translateX(-5px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(5px);
+  }
+}
 }
