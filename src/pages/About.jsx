@@ -9,8 +9,8 @@ import { useInView } from 'react-intersection-observer';
 import Contact from '../components/contact/contact'
 import Footer from '../components/footer/footer'
 //css imports
-import "../css/style.css"
-import "../css/about.css"
+// import "../css/style.css"
+// import "../css/about.css"
 // swiper Imports
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
