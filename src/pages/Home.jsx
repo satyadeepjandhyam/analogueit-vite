@@ -237,16 +237,16 @@ function Home() {
                 </div>
             </section>
             {/* <AboutCarsoule/> */}
-            {/* <section className="projectSection">
-                <img src={abtUsBackground} alt="" className="aboutBackGround" />
-                <div className="full_section">
+            <section className="projectSection ">
+                <img src={abtUsBackground} alt="" className="project-section-backGround" />
+                <div className="full_section ">
                     <div className="headsection">
                     <h1>Over 150+ projects completed</h1>
                     <p>With 99% on time project complition, agile project management methodology</p>
                     </div>
-                    <div className="projectcard">
+                    <div className="projectcard ">
                         <img src={projectImg} alt="projectimg" />
-                        <div className="projectCardBody">
+                        <div className="projectCardBody ">
                             <h1>Web Design</h1>
                             <h3>This is an example of prtfolio detail</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum similique eos consequatur error corporis temporibus dolorem magnam earum beatae, veritatis sint, assumenda dolores aliquam cumque illo neque molestias suscipit ab.</p>
@@ -254,9 +254,9 @@ function Home() {
                         </div>
                     </div>
                 </div>
-            </section> */}
-            {/* <Mobilecarsole/>
-            <Desktopcarsole/> */}
+            </section>
+            <Mobilecarsole/>
+            {/* <Desktopcarsole/> */}
             {/* <section className="awards">
                 <img src={awardImg} alt="awardImg" className="aboutBackGround" />
                 <div className="awardDiv">
