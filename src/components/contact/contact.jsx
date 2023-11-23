@@ -15,7 +15,7 @@ function Contact() {
                         Mindspace,
                         Madhapur, Hyderabad-500081.</p>
                     </div>
-                <div className="cdiv"><TfiEmail className="cicon1"/><p> info@analogueitsolutions.com</p></div>
+                <div className="cdiv d-flex align-items-center"><TfiEmail className="cicon1"/><p> info@analogueitsolutions.com</p></div>
                 <div className="cdiv"><BsFillTelephoneFill className="cicon1"/><p>+91 8919088163, +91 6309423978</p></div>
                 <div className="socialIcons">
                     <a href="#"><PiLinkedinLogoLight className="cicon1"/></a>

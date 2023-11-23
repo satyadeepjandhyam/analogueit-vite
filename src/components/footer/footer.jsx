@@ -18,7 +18,7 @@ export default function Footer() {
             </div>
             <div className='footerbody'>
               <div className="useFulllinks">
-                <h1>Usefull Links</h1>
+                <h1 className="use-full-links-h1">Usefull Links</h1>
                 <div className="links">
                   <a href="#" className="link"><FaGreaterThan/> home</a>
                   <a href="#" className="link"><FaGreaterThan/> About Us</a>
@@ -31,18 +31,17 @@ export default function Footer() {
                 
               </div>
               <div className="useFulllinks">
-                <h1>Our services</h1>
+                <h1  className="use-full-links-h1">Our services</h1>
                 <div className="links">
                   <a href="#" className="link"><FaGreaterThan/> UI/UX Design</a>
                   <a href="#" className="link"><FaGreaterThan/> Mobile Development</a>
                   <a href="#" className="link"><FaGreaterThan/> Web development</a>
                   <a href="#" className="link"><FaGreaterThan/> Digital Marketing</a>
-                  
                 </div>
                 
               </div>
               <div className="address1">
-                <h1>Our services</h1>
+                <h1 className="use-full-links-h1">Our services</h1>
                 <div className="links">
                   <p>1-98/4/64,Jaya Vijaya Plaza,Vittal Rao Nagar,Mindspace,Madhapur, Hyderabad-500081.</p>
                   <p><span>Phone:</span> +91 8919088163, +91 6309423978</p>
@@ -51,7 +50,7 @@ export default function Footer() {
                 
               </div>
               <div className="about1">
-                <h1>About Analogue It Solutions</h1>
+                <h1 className="use-full-links-h1">About Analogue It Solutions</h1>
                 <div className="links">
                   <p>Analogue IT solutions provide creative and dynamic Services of Web Development and Digital Marketing. We have gained rich expertise in building business-critical mobile and web products. We make complex art of Web development in a very simple, efficient and attractive manner.</p>
                 </div>

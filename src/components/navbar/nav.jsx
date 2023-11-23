@@ -11,18 +11,18 @@ function Nav() {
     return (
         <>
 <header id="header" className='Headder bg-primary m-0 '>
-  <div className="container-fluid d-flex align-items-center justify-content-between ">
+  <div className="container-fluid d-flex align-items-center justify-content-evenly  gap-5">
   <div className="logo">
       
-      <a className='w-10 h-10' href="index.html"><img className='img-fluid' src={logo1} alt='home' /></a>
+    <a className='w-10 h-10' href="index.html"><img className='img-fluid' src={logo1} alt='home' /></a>
   
   </div>
-  <nav id="navbar" className="navbar navbar-expand-lg">
-    <ul className='navbar-nav'>
-      <li className="nav-item p-1"><NavLink className='nav-link d-flex flex-column align-items-center justify-content-center text-white' to={"/"}><BiSolidHome className='icon_i'/>Home</NavLink></li>
-      <li className="nav-item p-1"><NavLink className='nav-link d-flex flex-column align-items-center justify-content-center text-white' to="/about" ><BiSolidInfoCircle className='icon_i'/> About</NavLink></li>
+  <nav id="navbar" className="navbar navbar-expand-lg ">
+    <ul className='navbar-nav gap-4'>
+      <li className="nav-item p-1 "><NavLink className='nav-link d-flex flex-column align-items-center justify-content-center text-white' to={"/"}><BiSolidHome className='icon_i h3'/>Home</NavLink></li>
+      <li className="nav-item p-1"><NavLink className='nav-link d-flex flex-column align-items-center justify-content-center text-white' to="/about" ><BiSolidInfoCircle className='icon_i h3'/> About</NavLink></li>
       <li  className="dropdown nav-item p-1" >
-        <a href="#" className='nav-link d-flex flex-column align-items-center justify-content-center text-white'><BiSolidCog className='icon_i'/> <span>Services</span> </a>
+        <a href="#" className='nav-link d-flex flex-column align-items-center justify-content-center text-white'><BiSolidCog className='icon_i h3'/> <span>Services</span> </a>
         {/* <ul>
           <li><a href="uxuidevelopment.html">UX/UI Development</a></li>
           <li><a href="webdevelopment.html">Web Development</a></li>
@@ -32,7 +32,7 @@ function Nav() {
         </ul> */}
       </li>
       <li className="nav-item p-1 dropdown">
-        <a href="#" className='nav-link d-flex flex-column align-items-center justify-content-center text-white'><BsGlobe className='icon_i'/> <span>Technologies</span> </a>
+        <a href="#" className='nav-link d-flex flex-column align-items-center justify-content-center text-white'><BsGlobe className='icon_i h3'/> <span>Technologies</span> </a>
         {/* <ul className="showDiv1">
           <li><a href="adobexd.html">Adobe XD</a></li>
           <li><a href="angulardev.html">Angular Development</a></li>
@@ -54,7 +54,7 @@ function Nav() {
         </ul> */}
       </li>
       <li className="dropdown nav-item p-1">
-        <a className='nav-link d-flex flex-column align-items-center justify-content-center text-white' href="#"><BiSolidLayer className='icon_i'/> <span>Our Products</span> </a>
+        <a className='nav-link d-flex flex-column align-items-center justify-content-center text-white' href="#"><BiSolidLayer className='icon_i h3'/> <span>Our Products</span> </a>
         {/* <ul className="showDiv">
           <li><a href="Ecommerce.html">E-Commerce Apps</a></li>
           <li><a href="Entertainment.html">Entertainment App</a></li>
@@ -83,7 +83,7 @@ function Nav() {
           <li><a href="Tution.html">Tution App</a></li>
         </ul> */}
       </li>
-      <li className='nav-item p-1'><a className='nav-link d-flex flex-column align-items-center justify-content-center text-white' href="portfolio.html"><FaComputer className='icon_i'/> Portfolio</a></li>
+      <li className='nav-item p-1'><a className='nav-link d-flex flex-column align-items-center justify-content-center text-white' href="portfolio.html"><FaComputer className='icon_i h3'/> Portfolio</a></li>
       {/* <li><a href="team.html">Team</a></li> */}
       {/* <li><a href="blog.html">Blog</a></li> */}
       {/* <ul>
@@ -105,7 +105,7 @@ function Nav() {
         <li><a href="#">Mobile Development</a></li>
         <li><a href="#">Digital Development</a></li>
       </ul> */}
-      <li className='nav-item p-1'><a className='nav-link d-flex flex-column align-items-center justify-content-center text-white' href="contact.html"><BiMobileAlt className='icon_i'/>Contact Us</a></li>
+      <li className='nav-item p-1'><a className='nav-link d-flex flex-column align-items-center justify-content-center text-white' href="contact.html"><BiMobileAlt className='icon_i h3'/>Contact Us</a></li>
     </ul>
     <i className="bi bi-list mobile-nav-toggle" />
   </nav>

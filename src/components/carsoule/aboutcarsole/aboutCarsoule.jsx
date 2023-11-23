@@ -12,7 +12,13 @@ export default function AboutCarsoule() {
       image:carsoleImg,
   headding:"UX DESIGN & DEVELOPMENT",
   discription:["At Analogue IT Solutions, we transform your ideas into meaningful user stories with our creative UI/UX development. Our expert UI/UX designers mainly focus on user expectations and incorporate the UX design practice in every stage of the app development cycle.","At Analogue IT Solutions, we transform your ideas into meaningful user stories with our creative UI/UX development. Our expert UI/UX designers mainly focus on user expectations and incorporate the UX design practice in every stage of the app development cycle. We create interfaces that are aesthetically appealing, easy to navigate, and truly user-friendly. We build creative and impressive designs with our deep knowledge of web designing and implementing the latest technology trends in your business."]
-},{
+},
+{
+  image:carsoleImg,
+headding:"UX DESIGN & DEVELOPMENT",
+discription:["At Analogue IT Solutions, we transform your ideas into meaningful user stories with our creative UI/UX development. Our expert UI/UX designers mainly focus on user expectations and incorporate the UX design practice in every stage of the app development cycle.","At Analogue IT Solutions, we transform your ideas into meaningful user stories with our creative UI/UX development. Our expert UI/UX designers mainly focus on user expectations and incorporate the UX design practice in every stage of the app development cycle. We create interfaces that are aesthetically appealing, easy to navigate, and truly user-friendly. We build creative and impressive designs with our deep knowledge of web designing and implementing the latest technology trends in your business."]
+}
+,{
   image:carsoleImg,
   headding:"Mobile Apps DEVELOPMENT",
   discription:[
@@ -42,8 +48,8 @@ export default function AboutCarsoule() {
    const updateIndex = (newIndex) => {
     if (newIndex < 0) {
       newIndex = 0;
-    } else if (newIndex >= items.length) {
-      newIndex = items.length - 1;
+    } else if (newIndex > items.length-1) {
+      newIndex = 0;
     }
 
     setActiveIndex(newIndex);
@@ -58,8 +64,9 @@ export default function AboutCarsoule() {
           }}>
      <FaGreaterThan className='rightIcon' />
      </button>
-        {items.map((item,i)=>{
-          return  <div key={i} className="innerdiv" style={{ transform: `translate(-${activeIndex * 100}%)`
+     <div className='slider-div'>
+     {items.map((item,i)=>{
+          return  <div key={i} className="innerdiv" style={{ transform: `translatex(${ -(activeIndex *100)}%)`
         }} >
           <img className='sliderImg' s src={carsoleImg} alt="sliderImg" />
             <div className="slider-body">
@@ -70,6 +77,8 @@ export default function AboutCarsoule() {
          
       </div>
         })}
+     </div>
+        
        
         
         <button className='btn-left' onClick={() => {

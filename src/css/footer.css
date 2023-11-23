@@ -74,6 +74,7 @@
     align-items: start;
     justify-content: start;
     flex-direction: column;
+    row-gap: 30px;
 }
 .about1{
     height: 80%;
@@ -82,6 +83,7 @@
     align-items: start;
     justify-content: start;
     flex-direction: column;
+    row-gap: 30px;
 }
 .address1{
     height: 80%;
@@ -89,7 +91,7 @@
     display: flex;
     align-items: start;
     justify-content: start;
-    flex-direction: column;
+    flex-direction: column;row-gap: 30px;
 }
 .links{
     height: 80%;
@@ -123,4 +125,7 @@ text-align: center;
     justify-content: center;
     color: white;
     height: 40px;
+}
+.use-full-links-h1{
+    font-size: 35px;
 }

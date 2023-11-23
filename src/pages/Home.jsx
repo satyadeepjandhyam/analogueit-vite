@@ -22,14 +22,31 @@ import Desktopcarsole from '../components/carsoule/desktopcarsole/desktopcarsole
 import { bannerImages } from '../data/data'
 import Mobilecarsole from '../components/carsoule/mobilecarsole/mobilecarsole'
 import "bootstrap/dist/css/bootstrap.css"
-
+import "@fontsource/jost";
 function Home() {
    const [revealUpToDown,setRevealUpToDown]=useState({
     "background-color" : "red"
    });
-  
+  const [cardstyle,setcards]=useState("card")
    const { ref: aboutHeadding, inView: isAboutHeaddingRevealed} = useInView();
-
+   const { ref: services, inView: isServiceRevealed} = useInView();
+   const getAppropriateCardStyle=(index)=>{
+        if(index===0 || index===3 || index===6 ){
+            return "card-transform-left-to-right"
+        }
+        else if(index===2 || index===5 || index===8 ){
+            return "card-transform-right-to-left"
+        }
+        else if(index===1){
+            return "card-transform-up-to-down"
+        }
+        else if(index===7){
+            return "card-transform-down-to-up"
+        }
+        else if(index===4){
+            return "card-transform-scale"
+        }
+   }
 
     const testimonialItems = [
         {
@@ -187,7 +204,7 @@ function Home() {
         <section className="banner p-0 container-fluid  m-0 ">
             <img className='b_img  p-0  m-0' src={bannerImg1} alt="bannerImg1" />
            <div className="banner-container">
-                <h1 className='banner_welcome'>Welcome To</h1>
+                <h1 className='banner_welcome bold font-weight-bold'>WELCOME TO</h1>
                 <img className='banner_logo' src={logo1} alt="logo" />
                 <button className='banner_btn'>KNOW MORE</button>
                 <div className="exp">
@@ -202,13 +219,13 @@ function Home() {
            </div>
             
         </section>
-            <section ref={aboutHeadding} className="about">
+            <section ref={aboutHeadding} className="about p-0 m-0">
                 <div className={isAboutHeaddingRevealed? "about_headding":""} >
 
                     <h1>About</h1> <img  src={blueLogo} alt="blueLogo" />
 
                 </div>
-                <div className="aboutbody row d-flex flex-row align-items-center justify-content-center">
+                <div className="aboutbody ">
                     <img className={isAboutHeaddingRevealed? "img1 ":""} src={aboutImg} alt="aboutImg" />
                     <div className={isAboutHeaddingRevealed? "aboucontent  ":""}>
                         <h1>What We Do?</h1>
@@ -218,15 +235,15 @@ function Home() {
                     </div>
                 </div>
             </section>
-            <section className="services position-relative container-fluid   p-0 mt-5 mb-5">
+            <section ref={services} className="services position-relative container-fluid   p-0 mt-5 mb-5">
                 <img src={servicesBackGroundImg} alt="" className="servicesBackground col-12 p-0 m-0 position-absolute img-fluid object-fit-contain" />
                 <div className="cards container-fluid position-relative d-flex flex-column align-items-center justify-content-center">
                     <div className="p-4 m-5 text-white"><h1>Our servies</h1></div>
                     <div className="cardsBody container-fluid align-items-center justify-content-center row column-gap-5 row-gap-5">
                        {serviceItems.map((items,i)=>{
-                            return  <div key={i} className="card col-lg-3 col-md-3  d-flex ">
-                            <div className="cardHeadding "><a className='nav-link text-white d-flex align-items-center justify-content-center' href="#">{items.headding}</a></div>
-                            <div className="cardBody d-flex flex-column align-items-center justify-content-center h-75">
+                            return  <div key={i} className={isServiceRevealed? getAppropriateCardStyle(i):"card"}>
+                            <div className="cardHeadding "><a className='nav-link text-white d-flex align-items-center justify-content-center ' href="#">{items.headding}</a></div>
+                            <div className="cardBody d-flex flex-column align-items-center justify-content-center h-75 row-gap-3">
                                 <img src={items.image} alt="" />
                                 <h1 className="text-center ">{items.headding}</h1>
                                 <p className="text-center ">{items.content}</p>
@@ -236,7 +253,7 @@ function Home() {
                     </div>
                 </div>
             </section>
-            {/* <AboutCarsoule/> */}
+            <AboutCarsoule/>
             <section className="projectSection ">
                 <img src={abtUsBackground} alt="" className="project-section-backGround" />
                 <div className="full_section ">
@@ -256,7 +273,7 @@ function Home() {
                 </div>
             </section>
             <Mobilecarsole/>
-            {/* <Desktopcarsole/> */}
+            <Desktopcarsole/>
             {/* <section className="awards">
                 <img src={awardImg} alt="awardImg" className="aboutBackGround" />
                 <div className="awardDiv">
@@ -323,7 +340,7 @@ function Home() {
                     </div>
                 </div>
             </section> */}
-            {/* <section className="testimonials">
+            <section className="testimonials ">
                 <div className="testimonialHead">
                     <h1>Testimonials</h1>
                     <p>Good work Team, we'll connect again</p>
@@ -345,11 +362,11 @@ function Home() {
                     )}
 
                 </div>
-            </section> */}
-           {/* <Contact/> */}
-           {/* <section className="footer_section">
+            </section>
+           <Contact/>
+           <section className="footer_section">
                  <Footer/>
-           </section> */}
+           </section>
         </>
     )
 }

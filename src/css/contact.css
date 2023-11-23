@@ -1,6 +1,6 @@
 .contact{
     position:relative;
-    top: 500px;
+    top: 200px;
     width: 100%;
     height: 90vh;
     display: flex;
@@ -28,9 +28,12 @@
     width: 90%;
     height: 10%;
     display: flex;
-    align-items: center;
+    align-items: center !important;
     justify-content: start;
     column-gap: 20px;
+}
+.cdiv p{
+    margin: 0;
 }
 .cicon1{
     height: 60px;
@@ -71,12 +74,14 @@ font-size: 60px;
     align-items: center;
     justify-content: start;
     flex-direction: column;
-    height: 100%;
+    height: 80%;
     width: 50%;
  }
  .formDiv h1{
     margin: 0px;
     color: #05527D;
+    font-size: 50px;
+    font-weight: bold;
  }
 .form{
     display: flex;
