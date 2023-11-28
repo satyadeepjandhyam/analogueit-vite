@@ -31,19 +31,19 @@ function Home() {
    const { ref: aboutHeadding, inView: isAboutHeaddingRevealed} = useInView();
    const { ref: services, inView: isServiceRevealed} = useInView();
    const getAppropriateCardStyle=(index)=>{
-        if(index===0 || index===3 || index===6 ){
+        if(index===0 || index===3 || index===6 || index===9 ){
             return "card-transform-left-to-right"
         }
-        else if(index===2 || index===5 || index===8 ){
+        else if(index===2 || index===5 || index===8 || index===11 ){
             return "card-transform-right-to-left"
         }
         else if(index===1){
             return "card-transform-up-to-down"
         }
-        else if(index===7){
+        else if(index===10){
             return "card-transform-down-to-up"
         }
-        else if(index===4){
+        else if(index===4 ||index===7){
             return "card-transform-scale"
         }
    }
@@ -194,6 +194,20 @@ function Home() {
             headding:"Cloud services",
             content:"We are one of the top digital marketing companies in India as we converge on the business growth of our clients"
         },
+        {
+            image:img1,
+            headding:"AI",
+            content:"We are one of the top digital marketing companies in India as we converge on the business growth of our clients"
+        },
+        {
+            image:img1,
+            headding:"ML",
+            content:"We are one of the top digital marketing companies in India as we converge on the business growth of our clients"
+        },{
+            image:img1,
+            headding:"IOT",
+            content:"We are one of the top digital marketing companies in India as we converge on the business growth of our clients"
+        },
         
         
     ];
@@ -235,8 +249,8 @@ function Home() {
                     </div>
                 </div>
             </section>
-            <section ref={services} className="services position-relative container-fluid   p-0 mt-5 mb-5">
-                <img src={servicesBackGroundImg} alt="" className="servicesBackground col-12 p-0 m-0 position-absolute img-fluid object-fit-contain" />
+            <section ref={services} className="services  container-fluid   p-0 mt-5 mb-5">
+                <img src={servicesBackGroundImg} alt="" className="servicesBackground col-12 p-0 m-0 position-absolute " />
                 <div className="cards container-fluid position-relative d-flex flex-column align-items-center justify-content-center">
                     <div className="p-4 m-5 text-white"><h1>Our servies</h1></div>
                     <div className="cardsBody container-fluid align-items-center justify-content-center row column-gap-5 row-gap-5">
@@ -253,7 +267,7 @@ function Home() {
                     </div>
                 </div>
             </section>
-            <AboutCarsoule/>
+            {/* <AboutCarsoule/> */}
             <section className="projectSection ">
                 <img src={abtUsBackground} alt="" className="project-section-backGround" />
                 <div className="full_section ">
@@ -272,8 +286,8 @@ function Home() {
                     </div>
                 </div>
             </section>
-            <Mobilecarsole/>
-            <Desktopcarsole/>
+            {/* <Mobilecarsole/>
+            <Desktopcarsole/> */}
             {/* <section className="awards">
                 <img src={awardImg} alt="awardImg" className="aboutBackGround" />
                 <div className="awardDiv">
@@ -340,7 +354,7 @@ function Home() {
                     </div>
                 </div>
             </section> */}
-            <section className="testimonials ">
+            {/* <section className="testimonials ">
                 <div className="testimonialHead">
                     <h1>Testimonials</h1>
                     <p>Good work Team, we'll connect again</p>
@@ -362,11 +376,11 @@ function Home() {
                     )}
 
                 </div>
-            </section>
-           <Contact/>
-           <section className="footer_section">
+            </section> */}
+           {/* <Contact/> */}
+           {/* <section className="footer_section">
                  <Footer/>
-           </section>
+           </section> */}
         </>
     )
 }

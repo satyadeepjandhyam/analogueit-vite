@@ -22,6 +22,9 @@ body{
   height: 90px;
 
 }
+
+
+
 .banner{
     height: 80%;
     position: relative;
@@ -55,7 +58,6 @@ body{
     padding: 0px;
     text-shadow: 5px 10px 6px #00000080;
     font-weight: bold;
-    /* text-shadow: 1px 10px 5px rgba(0,0,0,0.22); */
 
 }
 .banner_btn{
@@ -113,9 +115,7 @@ body{
     height: 100%;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     column-gap: 30px;
-    /* background-color: white; */
     animation: move-rtl 7s linear infinite;
   }
   
@@ -132,6 +132,17 @@ body{
       transform: translateX(-300%);
     }
   }
+
+  .services{
+    height: 2300px;
+    position: relative;
+  }
+  .services .servicesBackground{
+    height: 2300px !important;
+  }
+  .cardBody{
+    overflow: hidden;
+  }
 .cardsBody .card{
     height: 450px;
     width: 350px;
@@ -143,11 +154,11 @@ body{
     justify-content: start;
     row-gap: 30px;
     opacity: 0;
+   
 }
 .cardsBody .card-transform-left-to-right{
     height: 450px;
     width: 350px;
-    /* background-color: transparent; */
     flex-direction: column;
     border: none;
     display: flex;
@@ -200,7 +211,6 @@ body{
   justify-content: start;
   row-gap: 30px;
   opacity: 0;
-  /* transform: translate(200px); */
   animation: transform-up-to-down 2s ease-out;
   animation-fill-mode: forwards;
 }
@@ -292,14 +302,9 @@ body{
   height: 50%;
   width: 90%;
   font-size: 20px;
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px !important; */
-  
+ 
 }
 
-/* about csss */
 .about{
   position: relative;
   top: 80px !important;
@@ -403,7 +408,7 @@ body{
 }
 .projectSection{
   position: relative;
-  top: 200px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -553,13 +558,17 @@ body{
   background-image: linear-gradient(180deg, #164BB4 0%, #000000 100%);
 }
 @media only screen and (min-width: 1024px) and   (max-width: 1279px){
+  .navbar-nav .nav-link{
+
+  font-size: 10px;
+  
+  }
   .exp{
     position: absolute;
     z-index: 10;
     top: 25%;
     left: 57%;
     height: 50%;
-    /* background-color: yellow; */
     display: flex;
     align-items: start;
     justify-content: end;
@@ -572,9 +581,6 @@ body{
     position: absolute;
     z-index: -0;
     top: 63% !important;
-   
-    /* bottom: 200px;
-    left: 500px; */
     width: 500px;
     height: 60px !important;
     background-color: rgb(156, 26, 26);
@@ -592,10 +598,120 @@ body{
     height: 100%;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     column-gap: 30px;
-    /* background-color: rgb(95, 27, 27); */
     animation: move-rtl 30s linear infinite;
+  }
+  .about{
+    position: relative;
+    top: 80px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 0px !important;
+    height: 100vh;
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+    overflow: hidden;
+  }
+  .about .about_headding{
+   
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    width: 100%;
+    height: 10%; 
+    transform: translateY(-200px);
+    animation: aboutanimation 1s ease-out;
+    animation-fill-mode: forwards;
+    padding: 50px 0px 0px 0px;
+  }
+  @keyframes aboutanimation{
+    from{
+      opacity: 0;
+      transform: translateY(-200px);
+    }
+    to{
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  
+  
+  .about .aboutbody{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px ;
+    margin: 0px;
+  }
+  .about .aboutbody .img1{
+   
+    height: 60% !important;
+    width: 50% !important;
+    opacity: 0;
+    margin: 0 !important;
+    animation: thorughRight 1s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  @keyframes thorughRight{
+    0%{
+      opacity: 1;
+      transform: translateX(-900px);
+    }
+    85%{
+      opacity: 1;
+      transform: translateX(-5px);
+    }
+    100%{
+      opacity: 1;
+      transform: translateX(5px);
+    }
+  }
+  .about .aboutbody .aboucontent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40% !important;
+    opacity: 0;
+    animation: thorughleft 1s ease-in-out;
+    animation-fill-mode: forwards;
+    padding-left: 20px;
+  }
+  .about .aboutbody .aboucontent h1{
+    color: black;
+    font-size: 30px;
+  }
+  .about .aboutbody .aboucontent p{
+    font-size: 15px;
+  }
+  @keyframes thorughleft{
+    0%{
+      opacity: 1;
+      transform: translateX(500px);
+    }
+    85%{
+      opacity: 1;
+      transform: translateX(5px);
+    }
+    100%{
+      opacity: 1;
+      transform: translateX(-5px);
+    }
+  }
+  .services{
+    height: 1600px;
+    position: relative;
+    overflow: hidden;
+  }
+  .services .servicesBackground{
+    height: 100% !important;
   }
   .cardsBody{
     display: flex;
@@ -625,7 +741,6 @@ body{
 .cardsBody .card-transform-left-to-right{
     height: 350px;
     width: 300px;
-    /* background-color: transparent; */
     flex-direction: column;
     border: none;
     display: flex;
@@ -746,90 +861,14 @@ body{
     margin: 0;
     padding: 0;
 }
-/* .cardHeadding:hover a{
-   color: black !important;
-   background-color: white;
-   border-radius: 10px;
-   
-}
-.cardHeadding:hover{
-    border: none;
-} */
+
 .cardBody{
     background-color: white;
-    /* height: 70%; */
     border-radius: 10px;
 }
 .cardBody h1{
   font-size: 20px;
 }
-/* .about{
-  position: relative;
-  top: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
-}
-.about .aboutbody .aboucontent{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 40%;
-  opacity: 0;
-  animation: thorughleft 1s ease-in-out;
-  animation-fill-mode: forwards;
-} */
-/* .about .aboutbody{
-  height: 80%;
-  width: 100%;
-  display: flex;
-  flex-direction:row;
-  align-items: center;
-  justify-content: center;
-  column-gap: 20px;
-}
-.about .aboutbody .img1{
- 
-  height: 70%;
-  width: 50%;
-  opacity: 0;
-  animation: thorughRight 1s ease-in-out;
-  animation-fill-mode: forwards;
-}
-@keyframes thorughleft{
-  0%{
-    opacity: 1;
-    transform: translateX(900px);
-  }
-  85%{
-    opacity: 1;
-    transform: translateX(5px);
-  }
-  100%{
-    opacity: 1;
-    transform: translateX(-5px);
-  }
-}
-@keyframes thorughRight{
-  0%{
-    opacity: 1;
-    transform: translateX(-900px);
-  }
-  85%{
-    opacity: 1;
-    transform: translateX(-5px);
-  }
-  100%{
-    opacity: 1;
-    transform: translateX(5px);
-  }
-} */
 .projectcard{
   display: flex;
   flex-direction: row;
@@ -841,10 +880,11 @@ body{
   border-radius: 30px;
   column-gap: 50px;
 }
+
 .projectSection .project-section-backGround{
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 100% !important;
   z-index: -1;
 }
 .projectcard img{
@@ -1022,7 +1062,6 @@ box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.32);
     top: 20%;
     left: 55%;
     height: 60%;
-    /* background-color: yellow; */
     display: flex;
     align-items: start;
     justify-content: end;
@@ -1036,8 +1075,7 @@ box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.32);
     z-index: -0;
     top: 65% !important;
    
-    /* bottom: 200px;
-    left: 500px; */
+
     width: 500px;
     height: 80px !important;
     background-color: rgb(251, 250, 250);
@@ -1060,74 +1098,7 @@ box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.32);
     /* background-color: rgb(95, 27, 27); */
     animation: move-rtl 30s linear infinite;
   }
-  /* .about{
-    position: relative;
-    top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    row-gap: 20px;
-    height: 100vh;
-    width: 100%;
-    padding: 20px 0px 20px 0px;
-    overflow: hidden;
-  }
-  .about .aboutbody .aboucontent{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
-    opacity: 0;
-    animation: thorughleft 1s ease-in-out;
-    animation-fill-mode: forwards;
-  }
-  .about .aboutbody{
-    height: 90%;
-    width: 100%;
-    display: flex;
-    flex-direction:row;
-    align-items: center;
-    justify-content: center;
-    column-gap: 20px;
-  }
-  .about .aboutbody .img1{
-   
-    height: 70%;
-    width: 40%;
-    opacity: 0;
-    animation: thorughRight 1s ease-in-out;
-    animation-fill-mode: forwards;
-  }
-  @keyframes thorughleft{
-    0%{
-      opacity: 1;
-      transform: translateX(900px);
-    }
-    85%{
-      opacity: 1;
-      transform: translateX(5px);
-    }
-    100%{
-      opacity: 1;
-      transform: translateX(-5px);
-    }
-  }
-  @keyframes thorughRight{
-    0%{
-      opacity: 1;
-      transform: translateX(-900px);
-    }
-    85%{
-      opacity: 1;
-      transform: translateX(-5px);
-    }
-    100%{
-      opacity: 1;
-      transform: translateX(5px);
-    }
-  } */
+ 
   .projectcard{
     display: flex;
     flex-direction: row;
@@ -1343,3 +1314,139 @@ box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.32);
   
 }
 }
+
+/* @media screen and (min-width:1400px)and (max-width:2560px){
+  .Headder{
+    width: 100%;
+    height:10%;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start !important;
+}
+.Headder .logo{
+
+    width: 30%;
+    height: 100px;
+}
+.Headder .logo a img{
+  height: 90px;
+
+}
+
+.navbar-nav .nav-link{
+
+  font-size: 60%;
+  
+  }
+  .banner{
+    height: 100%;
+    position: relative;
+    top: 00px;
+}
+.b_img{
+    width: 100%;
+    height: 100vh;
+    z-index: -1;  
+    
+}
+
+.banner-container{
+    position: absolute;
+   display: flex;
+   align-items: center;
+   justify-content: start;
+   flex-direction: column;
+   row-gap: 20px;
+    top: 0px;
+    z-index: 0 !important;
+    top: 100px;
+    width: 100%;
+    height: 100%;
+   
+}
+.banner_welcome{
+   color: white;
+    width: 50%;
+    font-size: 120px !important;
+    margin: 0px;
+    padding: 0px;
+    text-shadow: 5px 10px 6px #00000080;
+    font-weight: bold;
+    position: relative;
+    top: 5%;
+}
+.banner_btn{
+     height: 100px;
+    width: 200px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50px;
+    position: relative;
+    top: 5%;
+    font-size: 20px;
+  }
+  .banner_logo{
+    position: relative;
+    top: 5%;
+    max-height: 18%;
+    margin: 0px;
+    padding: 0px;
+  }
+  .exp{
+    position: absolute;
+    z-index: 10;
+    top: 30%;
+    left: 53%;
+    max-height: 50%;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+  }
+  .exp .banner_frame{
+    max-height: 100%;
+  }
+
+  .animation_page{
+    position: absolute;
+    z-index: -0;
+    top: 72%;
+    width: 600px;
+    height: 150px !important;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 3px;
+    border-radius: 70px;
+    column-gap: 30px;
+  }
+  .animationDiv{
+    position: relative;
+    left: 500px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    animation: move-rtl 7s linear infinite;
+  }
+  
+  .animationDiv img{
+    height: 70%;
+    width: 25%;
+   
+  }
+  @keyframes move-rtl{
+    0%{
+      transform: translateX(0);
+    }
+    100%{
+      transform: translateX(-300%);
+    }
+  }
+
+} */
