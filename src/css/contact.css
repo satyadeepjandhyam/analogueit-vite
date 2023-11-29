@@ -126,7 +126,7 @@ font-size: 60px;
     
     background-color: #035A80;
 }
-@media only screen and (min-width:1024px) and (max-width:1279px){
+/* @media only screen and (min-width:1024px) and (max-width:1279px){
     .contact{
         position:relative;
         top: 0px;
@@ -191,7 +191,6 @@ font-size: 60px;
         height: 80%;
         flex-direction: column;
         row-gap: 10px;
-        /* background-color: #057d1b; */
     }
      .form .input{
         height: 40px;
@@ -203,4 +202,4 @@ font-size: 60px;
         padding-left: 10PX;
         outline: none;
     }
-}
+} */
