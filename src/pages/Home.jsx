@@ -218,8 +218,10 @@ function Home() {
         <section className="banner p-0 container-fluid  m-0 ">
             <img className='b_img  p-0  m-0' src={bannerImg1} alt="bannerImg1" />
            <div className="banner-container">
-                <h1 className='banner_welcome bold font-weight-bold'>WELCOME TO</h1>
+               <div className="baner-sub-container">
+               <h1 className='banner_welcome bold font-weight-bold'>WELCOME TO</h1>
                 <img className='banner_logo' src={logo1} alt="logo" />
+               </div>
                 <button className='banner_btn'>KNOW MORE</button>
                 <div className="exp">
                     <img className='banner_frame' src={Frame} alt="logo" />
@@ -377,7 +379,7 @@ function Home() {
 
                 </div>
             </section> */}
-           {/* <Contact/> */}
+           <Contact/>
            {/* <section className="footer_section">
                  <Footer/>
            </section> */}
