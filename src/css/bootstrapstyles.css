@@ -501,7 +501,7 @@ body{
 }
 .testimonials{
   position: relative;
-  top: 200px;
+  top: 0px;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -539,7 +539,7 @@ body{
 .testimonialCard:hover{
   height: 100%;
   width: 25%;
-  background-color: rgb(22, 22, 240);
+  background-color:#0F71E4;
 }
 .tcHead{
   display: flex;
@@ -557,11 +557,14 @@ body{
   align-items: center;
   justify-content: center;
 }
+.testBody p{
+  text-align: center;
+}
 .footer_section{
   height: 90vh;
   width: 100%;
   position: relative;
-  top: 500px;
+  top: 0px;
   background-image: linear-gradient(180deg, #164BB4 0%, #000000 100%);
 }
 @media only screen and (min-width: 1024px) and   (max-width: 1279px){

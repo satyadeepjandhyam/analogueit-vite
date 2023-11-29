@@ -356,7 +356,7 @@ function Home() {
                     </div>
                 </div>
             </section> */}
-            {/* <section className="testimonials ">
+            <section className="testimonials ">
                 <div className="testimonialHead">
                     <h1>Testimonials</h1>
                     <p>Good work Team, we'll connect again</p>
@@ -370,7 +370,7 @@ function Home() {
                                 </div>
                                 <div className="testBody">
                                         <p>{items.role}</p>
-                                        <p>{items.coments}</p>
+                                        <p >{items.coments}</p>
                                 </div>
         
                             </div>
@@ -378,11 +378,11 @@ function Home() {
                     )}
 
                 </div>
-            </section> */}
+            </section>
            <Contact/>
-           {/* <section className="footer_section">
+           <section className="footer_section">
                  <Footer/>
-           </section> */}
+           </section>
         </>
     )
 }
