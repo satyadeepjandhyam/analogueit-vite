@@ -126,7 +126,7 @@ font-size: 60px;
     
     background-color: #035A80;
 }
-/* @media only screen and (min-width:1024px) and (max-width:1279px){
+@media only screen and (min-width:1024px) and (max-width:1279px){
     .contact{
         position:relative;
         top: 0px;
@@ -202,7 +202,7 @@ font-size: 60px;
         padding-left: 10PX;
         outline: none;
     }
-} */
+}
 @media screen and (min-width:1400px) and (-webkit-min-device-pixel-ratio: 2){
     .contactLeft{
         position: relative;
