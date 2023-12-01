@@ -18,7 +18,7 @@
 }
 .footerbody{
     width: 90%;
-    height: 90% !important;
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: space-around;

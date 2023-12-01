@@ -22,9 +22,6 @@ body{
   height: 90px;
 
 }
-
-
-
 .banner{
     height: 80%;
     position: relative;
@@ -33,8 +30,7 @@ body{
 .b_img{
     width: 100%;
     height: 100vh;
-    z-index: -1;  
-    
+    z-index: -1;   
 }
 
 .banner-container{
@@ -1178,6 +1174,21 @@ box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.32);
   }
 }
 @media screen and (min-width:1400px) and (-webkit-min-device-pixel-ratio: 2){
+  .exp{
+    /* width: 50%; */
+    position: absolute;
+    z-index: 10;
+    top: 15% !important;
+    left: 55% !important;
+    height: 400px;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+  }
+  .exp .banner_frame{
+   
+    max-height: 100%;
+  }
   .cardsBody .card{
     min-height: 40%;
     width: 25%;
