@@ -103,6 +103,9 @@
     flex-direction: column;
    
 }
+.links link:hover{
+transform: scale(18px);
+}
 .address1 .links{
     display: flex;
     align-items: start;
@@ -113,7 +116,7 @@
     margin: 0px;
 }
 .about1 .links p{
-text-align: center;
+text-align: start;
 }
 .links a{
     color: white;

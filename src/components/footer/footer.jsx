@@ -18,14 +18,14 @@ export default function Footer() {
             </div>
             <div className='footerbody'>
               <div className="useFulllinks">
-                <h1 className="use-full-links-h1">Usefull Links</h1>
+                <h1 className="use-full-links-h1">Useful Links</h1>
                 <div className="links">
-                  <a href="#" className="link"><FaGreaterThan/> home</a>
+                  <a href="#" className="link"><FaGreaterThan/> Home</a>
                   <a href="#" className="link"><FaGreaterThan/> About Us</a>
                   <a href="#" className="link"><FaGreaterThan/> Portfolio</a>
                   <a href="#" className="link"><FaGreaterThan/> Contact Us</a>
                   <a href="#" className="link"><FaGreaterThan/> Landing Page</a>
-                  <a href="#" className="link"><FaGreaterThan/> Termes and conditions</a>
+                  <a href="#" className="link"><FaGreaterThan/> Terms and conditions</a>
                   <a href="#" className="link"><FaGreaterThan/> Privacy policy</a>
                 </div>
                 
