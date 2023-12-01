@@ -288,8 +288,8 @@ function Home() {
                     </div>
                 </div>
             </section>
-            {/* <Mobilecarsole/>
-            <Desktopcarsole/> */}
+            <Mobilecarsole/>
+            <Desktopcarsole/> 
             {/* <section className="awards">
                 <img src={awardImg} alt="awardImg" className="aboutBackGround" />
                 <div className="awardDiv">
