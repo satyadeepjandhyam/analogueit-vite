@@ -6,7 +6,7 @@
     justify-content: center;
     flex-direction: column;
     column-gap: 10px;
-    background-color: linear-gradient(180deg, #164BB4 0%, #000000 100%);
+    background-image: linear-gradient(180deg, #164BB4 0%, #000000 100%);
 
 }
 .ournewsletter{
@@ -18,7 +18,7 @@
 }
 .footerbody{
     width: 90%;
-    height: 460px;
+    height: 90% !important;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -124,7 +124,7 @@ text-align: center;
     align-items: center;
     justify-content: center;
     color: white;
-    height: 40px;
+    height: 40px !important;
 }
 .use-full-links-h1{
     font-size: 35px;
