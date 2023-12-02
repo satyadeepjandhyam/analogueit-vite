@@ -25,7 +25,9 @@ body{
   color:#7D99E1;
   
 } */
-
+.dropdown:hover >.showDiv1{
+  display: block;
+}
 .nav-item .active:focus,.nav-item .active:hover{
   color:#7D99E1 !important; 
 }
@@ -44,6 +46,9 @@ body{
     z-index: -1;   
 }
 .showDiv1{
+  position: absolute;
+  width: 200px;
+  background-color: white;
   display: none;
 }
 .banner-container{
@@ -1188,27 +1193,23 @@ box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.32);
 }
 @media screen and (min-width:1400px) and (-webkit-min-device-pixel-ratio: 2){
   .exp{
-    /* width: 50%; */
     position: absolute;
-   
     z-index: 10;
     top: 15% !important;
     left: 55% !important;
-    height: 700px;
+    height: 600px;
     display: flex;
     align-items: start;
     justify-content: end;
   }
   .banner_logo{
-  
-    max-height: 80%;
+    max-height: 60%;
     margin: 0px;
     padding: 0px;
-
   }
   .banner_welcome{
     color: white;
-    font-size: 120px !important;
+    font-size: 80px !important;
     margin: 0px;
     padding: 0px;
     text-shadow: 5px 10px 6px #00000080;
@@ -1217,16 +1218,16 @@ box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.32);
 }
 .animation_page{
   position: relative!important;
-  top: 30% !important;
-  height: 200px;
+  top: 20% !important;
+  height: 150px;
   width: 800px !important;
   border-radius: 100px !important;
 }
 .banner_btn{
    position: relative;
    top: 20px;
-  height: 100px;
-  width: 250px;
+  height: 80px;
+  width: 200px;
   background-color: black;
   color: white;
   border: 2px solid white;
@@ -1234,7 +1235,6 @@ box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.32);
   font-size: 20px;
 }
   .exp .banner_frame{
-   
     max-height: 100%;
   }
   .cardsBody .card{
@@ -1259,7 +1259,6 @@ box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.32);
     justify-content: start;
     row-gap: 30px;
     opacity: 0;
-    
     animation: transform-left-to-right 2s ease-out;
     animation-fill-mode: forwards;
 }
