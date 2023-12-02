@@ -23,6 +23,7 @@ import { bannerImages } from '../data/data'
 import Mobilecarsole from '../components/carsoule/mobilecarsole/mobilecarsole'
 import "bootstrap/dist/css/bootstrap.css"
 import "@fontsource/jost";
+import "../css/awards.css"
 function Home() {
    const [revealUpToDown,setRevealUpToDown]=useState({
     "background-color" : "red"
@@ -290,64 +291,64 @@ function Home() {
             </section>
             <Mobilecarsole/>
             <Desktopcarsole/> 
-            {/* <section className="awards">
-                <img src={awardImg} alt="awardImg" className="aboutBackGround" />
-                <div className="awardDiv">
-                    <div className="awardivHead">
+            <section className="awards d-flex align-items-center justify-content-center">
+               
+                <div className="awardDiv container  bg-white position-relative d-flex flex-column justify-content-evenly align-items-center">
+                    <div className="awardivHead ">
                         <img src={blueLogo} alt="blueLogo" />
                         <h4>We are reviewed on</h4>
                     </div>
-                    <div className="awardBody">
-                        <div className="awardleft">
-                            <h1>Skip The Big Proises. Hire The Best Developers Backed By Developers Backed By Accolades.</h1>
+                    <div className="awardBody d-flex flex-row">
+                        <div className="awardleft col-4">
+                            <h3 className='border-black'>Skip The Big Proises. Hire The Best Developers Backed By Developers Backed By Accolades.</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maiores pariatur aliquid. Minus, odio? Eligendi repellendus, doloribus nesciunt nobis iusto molestiae fugiat est impedit nisi voluptatibus. Eos cupiditate iusto optio!</p>
                         </div>
-                        <div className="awardright">
-                        <div className="awardsdiv">
+                        <div className="awardright  d-flex flex-wrap align-items-center justify-content-evenly">
+                        <div className="awardsdiv  d-flex flex-column align-items-center justify-content-center">
                             <div className='imgBack' ><img src={award1} alt="" /></div>
                             <p>clutch</p>
                         </div>
-                        <div className="awardsdiv">
+                        <div className="awardsdiv d-flex flex-column align-items-center justify-content-center">
                             <div className='imgBack' ><img src={award1} alt="" /></div>
                             <p>clutch</p>
                         </div>
-                        <div className="awardsdiv">
+                        <div className="awardsdiv d-flex flex-column align-items-center justify-content-center">
+                            <div className='imgBack' ><img src={award1} alt="" /></div>
+                            <p>clutch</p>
+                        </div> 
+                        <div className="awardsdiv d-flex flex-column align-items-center justify-content-center">
                             <div className='imgBack' ><img src={award1} alt="" /></div>
                             <p>clutch</p>
                         </div>
-                        <div className="awardsdiv">
+                        <div className="awardsdiv d-flex flex-column align-items-center justify-content-center">
                             <div className='imgBack' ><img src={award1} alt="" /></div>
                             <p>clutch</p>
                         </div>
-                        <div className="awardsdiv">
+                        <div className="awardsdiv d-flex flex-column align-items-center justify-content-center">
                             <div className='imgBack' ><img src={award1} alt="" /></div>
                             <p>clutch</p>
                         </div>
-                        <div className="awardsdiv">
+                        <div className="awardsdiv d-flex flex-column align-items-center justify-content-center">
                             <div className='imgBack' ><img src={award1} alt="" /></div>
                             <p>clutch</p>
                         </div>
-                        <div className="awardsdiv">
+                        <div className="awardsdiv d-flex flex-column align-items-center justify-content-center">
                             <div className='imgBack' ><img src={award1} alt="" /></div>
                             <p>clutch</p>
                         </div>
-                        <div className="awardsdiv">
+                        <div className="awardsdiv d-flex flex-column align-items-center justify-content-center">
                             <div className='imgBack' ><img src={award1} alt="" /></div>
                             <p>clutch</p>
                         </div>
-                        <div className="awardsdiv">
+                        <div className="awardsdiv d-flex flex-column align-items-center justify-content-center">
                             <div className='imgBack' ><img src={award1} alt="" /></div>
                             <p>clutch</p>
                         </div>
-                        <div className="awardsdiv">
+                        <div className="awardsdiv d-flex flex-column align-items-center justify-content-center">
                             <div className='imgBack' ><img src={award1} alt="" /></div>
                             <p>clutch</p>
                         </div>
-                        <div className="awardsdiv">
-                            <div className='imgBack' ><img src={award1} alt="" /></div>
-                            <p>clutch</p>
-                        </div>
-                        <div className="awardsdiv">
+                        <div className="awardsdiv d-flex flex-column align-items-center justify-content-center">
                             <div className='imgBack' ><img src={award1} alt="" /></div>
                             <p>clutch</p>
                         </div>
@@ -355,7 +356,7 @@ function Home() {
                         </div>
                     </div>
                 </div>
-            </section> */}
+            </section>
             <section className="testimonials ">
                 <div className="testimonialHead">
                     <h1>Testimonials</h1>
