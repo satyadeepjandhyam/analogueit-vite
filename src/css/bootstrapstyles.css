@@ -18,6 +18,17 @@ body{
     width: 30%;
     height: 100px;
 }
+/* .nav-item a:hover,
+.nav-item .active,
+.nav-item .active:focus,
+.nav-item li:hover > a {
+  color:#7D99E1;
+  
+} */
+
+.nav-item .active:focus,.nav-item .active:hover{
+  color:#7D99E1 !important; 
+}
 .Headder .logo a img{
   height: 90px;
 
@@ -32,7 +43,9 @@ body{
     height: 100vh;
     z-index: -1;   
 }
-
+.showDiv1{
+  display: none;
+}
 .banner-container{
     position: absolute;
    display: flex;

@@ -23,7 +23,9 @@ import { bannerImages } from '../data/data'
 import Mobilecarsole from '../components/carsoule/mobilecarsole/mobilecarsole'
 import "bootstrap/dist/css/bootstrap.css"
 import "@fontsource/jost";
-import "../css/awards.css"
+import "../css/awards.css";
+import "../css/ourprocess.css"
+import processImg from "../assets/Group 109.png";
 function Home() {
    const [revealUpToDown,setRevealUpToDown]=useState({
     "background-color" : "red"
@@ -270,7 +272,11 @@ function Home() {
                     </div>
                 </div>
             </section>
-            {/* <AboutCarsoule/> */}
+            <div className="container-fluid our-process d-flex flex-column align-items-center">
+                <div className='text-center text-white'><h1>Our process</h1></div>
+                <img className="" src={processImg} alt="" />
+            </div>
+            <AboutCarsoule/>
             <section className="projectSection ">
                 <img src={abtUsBackground} alt="" className="project-section-backGround" />
                 <div className="full_section ">
@@ -304,55 +310,46 @@ function Home() {
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maiores pariatur aliquid. Minus, odio? Eligendi repellendus, doloribus nesciunt nobis iusto molestiae fugiat est impedit nisi voluptatibus. Eos cupiditate iusto optio!</p>
                         </div>
                         <div className="awardright  d-flex flex-wrap align-items-center justify-content-evenly">
-                        <div className="awardsdiv  d-flex flex-column align-items-center justify-content-center">
+                       <a className="link awardsdiv  d-flex flex-column align-items-center justify-content-center" href="#"> 
                             <div className='imgBack' ><img src={award1} alt="" /></div>
                             <p>clutch</p>
-                        </div>
-                        <div className="awardsdiv d-flex flex-column align-items-center justify-content-center">
+                        </a>
+                        <a className="link awardsdiv  d-flex flex-column align-items-center justify-content-center" href="#"> 
                             <div className='imgBack' ><img src={award1} alt="" /></div>
                             <p>clutch</p>
-                        </div>
-                        <div className="awardsdiv d-flex flex-column align-items-center justify-content-center">
+                        </a><a className="link awardsdiv  d-flex flex-column align-items-center justify-content-center" href="#"> 
                             <div className='imgBack' ><img src={award1} alt="" /></div>
                             <p>clutch</p>
-                        </div> 
-                        <div className="awardsdiv d-flex flex-column align-items-center justify-content-center">
+                        </a><a className="link awardsdiv  d-flex flex-column align-items-center justify-content-center" href="#"> 
                             <div className='imgBack' ><img src={award1} alt="" /></div>
                             <p>clutch</p>
-                        </div>
-                        <div className="awardsdiv d-flex flex-column align-items-center justify-content-center">
+                        </a><a className="link awardsdiv  d-flex flex-column align-items-center justify-content-center" href="#"> 
                             <div className='imgBack' ><img src={award1} alt="" /></div>
                             <p>clutch</p>
-                        </div>
-                        <div className="awardsdiv d-flex flex-column align-items-center justify-content-center">
+                        </a><a className="link awardsdiv  d-flex flex-column align-items-center justify-content-center" href="#"> 
                             <div className='imgBack' ><img src={award1} alt="" /></div>
                             <p>clutch</p>
-                        </div>
-                        <div className="awardsdiv d-flex flex-column align-items-center justify-content-center">
+                        </a><a className="link awardsdiv  d-flex flex-column align-items-center justify-content-center" href="#"> 
                             <div className='imgBack' ><img src={award1} alt="" /></div>
                             <p>clutch</p>
-                        </div>
-                        <div className="awardsdiv d-flex flex-column align-items-center justify-content-center">
+                        </a><a className="link awardsdiv  d-flex flex-column align-items-center justify-content-center" href="#"> 
                             <div className='imgBack' ><img src={award1} alt="" /></div>
                             <p>clutch</p>
-                        </div>
-                        <div className="awardsdiv d-flex flex-column align-items-center justify-content-center">
+                        </a><a className="link awardsdiv  d-flex flex-column align-items-center justify-content-center" href="#"> 
                             <div className='imgBack' ><img src={award1} alt="" /></div>
                             <p>clutch</p>
-                        </div>
-                        <div className="awardsdiv d-flex flex-column align-items-center justify-content-center">
+                        </a>
+                        <a className="link awardsdiv  d-flex flex-column align-items-center justify-content-center" href="#"> 
                             <div className='imgBack' ><img src={award1} alt="" /></div>
                             <p>clutch</p>
-                        </div>
-                        <div className="awardsdiv d-flex flex-column align-items-center justify-content-center">
+                        </a><a className="link awardsdiv  d-flex flex-column align-items-center justify-content-center" href="#"> 
                             <div className='imgBack' ><img src={award1} alt="" /></div>
                             <p>clutch</p>
-                        </div>
-                        <div className="awardsdiv d-flex flex-column align-items-center justify-content-center">
+                        </a><a className="link awardsdiv  d-flex flex-column align-items-center justify-content-center" href="#"> 
                             <div className='imgBack' ><img src={award1} alt="" /></div>
                             <p>clutch</p>
-                        </div>
-                        
+                        </a>
+                                                
                         </div>
                     </div>
                 </div>

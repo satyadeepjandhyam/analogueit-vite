@@ -22,3 +22,11 @@ background-color: antiquewhite;
     width: 15%;
     height: 15%;
 }
+.awardsdiv:hover{
+    
+    transform: scale(120%);
+}
+.link{
+    text-decoration: none;
+    color: black;
+}

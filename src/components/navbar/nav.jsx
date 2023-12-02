@@ -19,17 +19,17 @@ function Nav() {
   </div>
   <nav id="navbar" className="navbar navbar-expand-lg ">
     <ul className='navbar-nav gap-4'>
-      <li className="nav-item p-1 "><NavLink className='nav-link d-flex flex-column align-items-center justify-content-center text-white' to={"/"}><BiSolidHome className='icon_i h3'/>Home</NavLink></li>
-      <li className="nav-item p-1"><NavLink className='nav-link d-flex flex-column align-items-center justify-content-center text-white' to="/about" ><BiSolidInfoCircle className='icon_i h3'/> About</NavLink></li>
+      <li className="nav-item p-1 "><NavLink activeStyle="active" className=' nav-link d-flex flex-column align-items-center justify-content-center text-white' to={"/"}><BiSolidHome className='icon_i h3'/>Home</NavLink></li>
+      <li className="nav-item p-1"><NavLink className='active nav-link d-flex flex-column align-items-center justify-content-center text-white' to="/about" ><BiSolidInfoCircle className='icon_i h3'/> About</NavLink></li>
       <li  className="dropdown nav-item p-1" >
         <a href="#" className='nav-link d-flex flex-column align-items-center justify-content-center text-white'><BiSolidCog className='icon_i h3'/> <span>Services</span> </a>
-        {/* <ul>
+        <ul className="showDiv1">
           <li><a href="uxuidevelopment.html">UX/UI Development</a></li>
           <li><a href="webdevelopment.html">Web Development</a></li>
          
           <li><a href="mobiledevelopment.html">Mobile Development</a></li>
           <li><a href="digitalmarketing.html">Digital Development</a></li>
-        </ul> */}
+        </ul>
       </li>
       <li className="nav-item p-1 dropdown">
         <a href="#" className='nav-link d-flex flex-column align-items-center justify-content-center text-white'><BsGlobe className='icon_i h3'/> <span>Technologies</span> </a>
