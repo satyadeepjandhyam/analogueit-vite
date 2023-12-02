@@ -288,8 +288,10 @@ font-size: 60px;
 }
 @media screen and (min-width:1400px) and (-webkit-min-device-pixel-ratio: 2){
     .contactLeft{
-        position: relative;
-        left: 140px;
+        /* position: relative;
+        left: 140px; */
+        position: absolute;
+        left: 20%;
         width: 30%;
         height: 75%;
         background-color: #05527D;

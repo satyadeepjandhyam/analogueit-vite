@@ -10,7 +10,7 @@ import img1 from'../assets/New folder/service1.png'
 import abtUsBackground from '../assets/New folder/hero-bg.jpg'
 import projectImg from '../assets/New folder/2.png'
 import awardImg from '../assets/New folder/image 63.png'
-import award1 from '../assets/New folder/image 50.png'
+import award1 from '../assets/New folder/clutch.png'
 import testi1 from '../assets/aiSandeepthi.jpeg'
 import Contact from '../components/contact/contact'
 import Footer from '../components/footer/footer'
@@ -26,6 +26,7 @@ import "@fontsource/jost";
 import "../css/awards.css";
 import "../css/ourprocess.css"
 import processImg from "../assets/Group 109.png";
+import { businessProfiles } from '../data/data'
 function Home() {
    const [revealUpToDown,setRevealUpToDown]=useState({
     "background-color" : "red"
@@ -276,7 +277,7 @@ function Home() {
                 <div className='text-center text-white'><h1>Our process</h1></div>
                 <img className="" src={processImg} alt="" />
             </div>
-            <AboutCarsoule/>
+            {/* <AboutCarsoule/> */}
             <section className="projectSection ">
                 <img src={abtUsBackground} alt="" className="project-section-backGround" />
                 <div className="full_section ">
@@ -295,8 +296,8 @@ function Home() {
                     </div>
                 </div>
             </section>
-            <Mobilecarsole/>
-            <Desktopcarsole/> 
+            {/* <Mobilecarsole/>
+            <Desktopcarsole/>  */}
             <section className="awards d-flex align-items-center justify-content-center">
                
                 <div className="awardDiv container  bg-white position-relative d-flex flex-column justify-content-evenly align-items-center">
@@ -310,46 +311,11 @@ function Home() {
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maiores pariatur aliquid. Minus, odio? Eligendi repellendus, doloribus nesciunt nobis iusto molestiae fugiat est impedit nisi voluptatibus. Eos cupiditate iusto optio!</p>
                         </div>
                         <div className="awardright  d-flex flex-wrap align-items-center justify-content-evenly">
-                       <a className="link awardsdiv  d-flex flex-column align-items-center justify-content-center" href="#"> 
-                            <div className='imgBack' ><img src={award1} alt="" /></div>
-                            <p>clutch</p>
-                        </a>
-                        <a className="link awardsdiv  d-flex flex-column align-items-center justify-content-center" href="#"> 
-                            <div className='imgBack' ><img src={award1} alt="" /></div>
-                            <p>clutch</p>
-                        </a><a className="link awardsdiv  d-flex flex-column align-items-center justify-content-center" href="#"> 
-                            <div className='imgBack' ><img src={award1} alt="" /></div>
-                            <p>clutch</p>
-                        </a><a className="link awardsdiv  d-flex flex-column align-items-center justify-content-center" href="#"> 
-                            <div className='imgBack' ><img src={award1} alt="" /></div>
-                            <p>clutch</p>
-                        </a><a className="link awardsdiv  d-flex flex-column align-items-center justify-content-center" href="#"> 
-                            <div className='imgBack' ><img src={award1} alt="" /></div>
-                            <p>clutch</p>
-                        </a><a className="link awardsdiv  d-flex flex-column align-items-center justify-content-center" href="#"> 
-                            <div className='imgBack' ><img src={award1} alt="" /></div>
-                            <p>clutch</p>
-                        </a><a className="link awardsdiv  d-flex flex-column align-items-center justify-content-center" href="#"> 
-                            <div className='imgBack' ><img src={award1} alt="" /></div>
-                            <p>clutch</p>
-                        </a><a className="link awardsdiv  d-flex flex-column align-items-center justify-content-center" href="#"> 
-                            <div className='imgBack' ><img src={award1} alt="" /></div>
-                            <p>clutch</p>
-                        </a><a className="link awardsdiv  d-flex flex-column align-items-center justify-content-center" href="#"> 
-                            <div className='imgBack' ><img src={award1} alt="" /></div>
-                            <p>clutch</p>
-                        </a>
-                        <a className="link awardsdiv  d-flex flex-column align-items-center justify-content-center" href="#"> 
-                            <div className='imgBack' ><img src={award1} alt="" /></div>
-                            <p>clutch</p>
-                        </a><a className="link awardsdiv  d-flex flex-column align-items-center justify-content-center" href="#"> 
-                            <div className='imgBack' ><img src={award1} alt="" /></div>
-                            <p>clutch</p>
-                        </a><a className="link awardsdiv  d-flex flex-column align-items-center justify-content-center" href="#"> 
-                            <div className='imgBack' ><img src={award1} alt="" /></div>
-                            <p>clutch</p>
-                        </a>
-                                                
+                            {businessProfiles.map((items,i)=>{return  <a key={items.profileName+i} className="link awardsdiv  d-flex flex-column align-items-center justify-content-center" href={items.profileLink}> 
+                            <div className='imgBack' ><img src={items.image} alt="" /></div>
+                            <p>{items.profileName}</p>
+                         </a>})}
+                                          
                         </div>
                     </div>
                 </div>
