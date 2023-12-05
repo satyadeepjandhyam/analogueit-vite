@@ -1,0 +1,8 @@
+.container h1{
+    color: #0A386E;
+}
+.tech-container{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+}

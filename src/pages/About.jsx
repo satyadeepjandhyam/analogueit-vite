@@ -61,9 +61,9 @@ function About() {
                 </div>
             </section>
             <Contact/>
-           <section className="footer_section">
+           
                  <Footer/>
-           </section>
+           
         </>
     )
 }

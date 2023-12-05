@@ -10,7 +10,7 @@ import "bootstrap/dist/css/bootstrap.css"
 function Nav() {
     return (
         <>
-<header id="header" className='Headder bg-primary m-0 '>
+<header id="header" className='Headder bg-primary m-0 position-fixed'>
   <div className="container-fluid d-flex align-items-center justify-content-evenly  gap-5">
   <div className="logo">
       
@@ -33,29 +33,34 @@ function Nav() {
       </li>
       <li className="nav-item p-1 dropdown">
         <a href="#" className='nav-link d-flex flex-column align-items-center justify-content-center text-white'><BsGlobe className='icon_i h3'/> <span>Technologies</span> </a>
-        {/* <ul className="showDiv1">
-          <li><a href="adobexd.html">Adobe XD</a></li>
-          <li><a href="angulardev.html">Angular Development</a></li>
-          <li><a href="aws.html">AWS</a></li>
-          <li><a href="photoshop.html">PHOTOSHOP</a></li>
-          <li><a href="python.html">PYTHON</a></li>
-          <li><a href="java.html">JAVA</a></li>
-          <li><a href="figma.html">FIGMA</a></li>
-          <li><a href="gcp.html">GCP</a></li>
-          <li><a href="microsoftazure.html">Microsoft Azure</a></li>
-          <li><a href="nextjs.html">NextJs</a></li>
-          <li><a href="nodejs.html">NodeJs</a></li>
-          <li><a href="reactnative.html">React Native </a></li>
-          <li><a href="nosql.html">NoSQL (MongoDB)</a></li>
-          <li><a href="php.html">PHP</a></li>
-          <li><a href="ql.html">Oracle, MySql, SqlServer</a></li>
-          <li><a href="Vuejs.html">Vue JS</a></li>
-          <li><a href="webframework.html">Web Framework</a></li>
-        </ul> */}
+        <ul className="showDiv2">
+          <div >
+          <li><NavLink to={"/adobexd"}>Adobe XD</NavLink></li>
+          <li><NavLink to="/angulardev">Angular Development</NavLink></li>
+          <li><NavLink to="/aws">AWS</NavLink></li>
+          <li><NavLink to="/photoshop">PHOTOSHOP</NavLink></li>
+          <li><NavLink to="/python">PYTHON</NavLink></li>
+          <li><NavLink to="/java">JAVA</NavLink></li>
+          <li><NavLink to="/figma">FIGMA</NavLink></li>
+          <li><NavLink to="/gcp">GCP</NavLink></li>
+          <li><NavLink to="/microsoftazure">Microsoft Azure</NavLink></li>
+          </div>
+          <div>
+          <li><NavLink to="/nextjs">NextJs</NavLink></li>
+          <li><NavLink to="/nodejs">NodeJs</NavLink></li>
+          <li><NavLink to="/reactnative">React Native </NavLink></li>
+          <li><NavLink to="/nosql">NoSQL (MongoDB)</NavLink></li>
+          <li><NavLink to="/php">PHP</NavLink></li>
+          <li><NavLink to="/ql">Oracle, MySql, SqlServer</NavLink></li>
+          <li><NavLink to="/viewjs">Vue JS</NavLink></li>
+          <li><NavLink to="/webframework">Web Framework</NavLink></li>
+          </div>
+        </ul>
       </li>
       <li className="dropdown nav-item p-1">
         <a className='nav-link d-flex flex-column align-items-center justify-content-center text-white' href="#"><BiSolidLayer className='icon_i h3'/> <span>Our Products</span> </a>
-        {/* <ul className="showDiv">
+        <ul className="showDiv2">
+          <div>
           <li><a href="Ecommerce.html">E-Commerce Apps</a></li>
           <li><a href="Entertainment.html">Entertainment App</a></li>
           <li><a href="FlowerDelivery.html">Flower Delivery App</a></li>
@@ -69,7 +74,8 @@ function Nav() {
           <li><a href="Laundry.html">Laundry App</a></li>
           <li><a href="Logistics.html">Logistic App</a></li>
           <li><a href="MarketingService.html">Marketing Service App</a></li>
-          <li><a href="MassageTherapist.html">Massage Therapist App</a></li>
+          </div>
+         <div> <li><a href="MassageTherapist.html">Massage Therapist App</a></li>
           <li><a href="Mechanics.html">Mechanics App</a></li>
           <li><a href="Movers.html">Moviers App</a></li>
           <li><a href="Pharmacy.html">Pharmacy App</a></li>
@@ -80,8 +86,8 @@ function Nav() {
           <li><a href="Taxi.html">Taxi Booking App</a></li>
           <li><a href="TowTruck.html">Tow Truck Apps</a></li>
           <li><a href="Transportation.html">Transportation App</a></li>
-          <li><a href="Tution.html">Tution App</a></li>
-        </ul> */}
+          <li><a href="Tution.html">Tution App</a></li></div>
+        </ul>
       </li>
       <li className='nav-item p-1'><a className='nav-link d-flex flex-column align-items-center justify-content-center text-white' href="portfolio.html"><FaComputer className='icon_i h3'/> Portfolio</a></li>
       {/* <li><a href="team.html">Team</a></li> */}
