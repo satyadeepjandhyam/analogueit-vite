@@ -1,7 +1,7 @@
 
 import './App.css';
 import{BrowserRouter,Routes,Route} from 'react-router-dom'
-import Home from './pages/home';
+import Home from './pages/Home';
 import About from './pages/About';
 import AdobeXD from './pages/technologies/AdobeXD';
 import Aws from './pages/technologies/Aws';
