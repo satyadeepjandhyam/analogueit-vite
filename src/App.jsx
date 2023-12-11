@@ -20,6 +20,7 @@ import Ql from './pages/technologies/Ql';
 import ReactNative from './pages/technologies/ReactNative';
 import View from './pages/technologies/View';
 import WebFrameWork from './pages/technologies/WebFrameWork';
+import EcommerceApp from './pages/our products/EcommerceApp';
 function App() {
   return (
     <BrowserRouter>
@@ -43,6 +44,8 @@ function App() {
         <Route path='/Webframework' element={<WebFrameWork/>}/>
         <Route path='/ql' element={<Ql/>}/>
         <Route path='/nosql' element={<NoSqlDb/>}/>
+        {/* routes for our products */}
+        <Route path='/Ecommerce' element={<EcommerceApp/>}/>
         
       </Routes>
     </BrowserRouter>

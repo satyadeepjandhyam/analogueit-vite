@@ -61,32 +61,32 @@ function Nav() {
         <a className='nav-link d-flex flex-column align-items-center justify-content-center text-white' href="#"><BiSolidLayer className='icon_i h3'/> <span>Our Products</span> </a>
         <ul className="showDiv2">
           <div>
-          <li><a href="Ecommerce.html">E-Commerce Apps</a></li>
-          <li><a href="Entertainment.html">Entertainment App</a></li>
-          <li><a href="FlowerDelivery.html">Flower Delivery App</a></li>
-          <li><a href="FoodDelivery.html">Food Delivery App</a></li>
-          <li><a href="Fundrasing.html">Fundraising App</a></li>
-          <li><a href="game.html">Game App</a></li>
-          <li><a href="Grocery.html">Grocery Delivery App</a></li>
-          <li><a href="handyman.html">Handyman App</a></li>
-          <li><a href="HotelBooking.html">Hotel Booking App</a></li>
-          <li><a href="Jobs.html">Job Apps</a></li>
-          <li><a href="Laundry.html">Laundry App</a></li>
-          <li><a href="Logistics.html">Logistic App</a></li>
-          <li><a href="MarketingService.html">Marketing Service App</a></li>
+          <li><NavLink to="/Ecommerce">E-Commerce Apps</NavLink></li>
+          <li><NavLink to="/Entertainment">Entertainment App</NavLink></li>
+          <li><NavLink to="/FlowerDelivery">Flower Delivery App</NavLink></li>
+          <li><NavLink to="/FoodDelivery">Food Delivery App</NavLink></li>
+          <li><NavLink to="/Fundrasing">Fundraising App</NavLink></li>
+          <li><NavLink to="/game">Game App</NavLink></li>
+          <li><NavLink to="/Grocery">Grocery Delivery App</NavLink></li>
+          <li><NavLink to="/handyman">Handyman App</NavLink></li>
+          <li><NavLink to="/HotelBooking">Hotel Booking App</NavLink></li>
+          <li><NavLink to="/Jobs">Job Apps</NavLink></li>
+          <li><NavLink to="/Laundry">Laundry App</NavLink></li>
+          <li><NavLink to="/Logistics">Logistic App</NavLink></li>
+          <li><NavLink to="/MarketingService">Marketing Service App</NavLink></li>
           </div>
-         <div> <li><a href="MassageTherapist.html">Massage Therapist App</a></li>
-          <li><a href="Mechanics.html">Mechanics App</a></li>
-          <li><a href="Movers.html">Moviers App</a></li>
-          <li><a href="Pharmacy.html">Pharmacy App</a></li>
-          <li><a href="Plumbers.html">Plumbers Booking App</a></li>
-          <li><a href="RealEstate.html">Real Estate App</a></li>
-          <li><a href="Rental.html">Rental App</a></li>
-          <li><a href="SocialMedia.html">Social Media App</a></li>
-          <li><a href="Taxi.html">Taxi Booking App</a></li>
-          <li><a href="TowTruck.html">Tow Truck Apps</a></li>
-          <li><a href="Transportation.html">Transportation App</a></li>
-          <li><a href="Tution.html">Tution App</a></li></div>
+         <div> <li><NavLink href="MassageTherapist.html">Massage Therapist App</NavLink></li>
+          <li><NavLink to="/Mechanics.html">Mechanics App</NavLink></li>
+          <li><NavLink to="/Movers.html">Moviers App</NavLink></li>
+          <li><NavLink to="/Pharmacy.html">Pharmacy App</NavLink></li>
+          <li><NavLink to="/Plumbers.html">Plumbers Booking App</NavLink></li>
+          <li><NavLink to="/RealEstate.html">Real Estate App</NavLink></li>
+          <li><NavLink to="/Rental.html">Rental App</NavLink></li>
+          <li><NavLink to="/SocialMedia.html">Social Media App</NavLink></li>
+          <li><NavLink to="/Taxi.html">Taxi Booking App</NavLink></li>
+          <li><NavLink to="/TowTruck.html">Tow Truck Apps</NavLink></li>
+          <li><NavLink to="/Transportation.html">Transportation App</NavLink></li>
+          <li><NavLink to="/Tution.html">Tution App</NavLink></li></div>
         </ul>
       </li>
       <li className='nav-item p-1'><a className='nav-link d-flex flex-column align-items-center justify-content-center text-white' href="portfolio.html"><FaComputer className='icon_i h3'/> Portfolio</a></li>
