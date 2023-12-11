@@ -1025,7 +1025,7 @@ body{
 box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.32);
 }
 } */
-@media only screen and (min-width:1024px) and (max-width:1199px){
+/* @media only screen and (min-width:1024px) and (max-width:1199px){
   .cardsBody .card-transform-left-to-right{
     height: 300px;
     width: 250px;
@@ -1161,7 +1161,7 @@ box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.32);
   width: 90%;
   font-size: 15px;
 }
-}
+} */
 @media only screen and (min-width: 1200px) {
   .exp{
     position: absolute;
