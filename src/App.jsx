@@ -13,7 +13,7 @@ import MicrosoftAzru from './pages/technologies/MicrosoftAzru';
 import Next from './pages/technologies/Next';
 import NodeJs from './pages/technologies/Nodejs';
 import NoSqlDb from './pages/technologies/NoSqlDb';
-import Photoshop from './pages/technologies/photoshop';
+import Photoshop from './pages/technologies/Photoshop';
 import Php from './pages/technologies/Php';
 import Python from './pages/technologies/Python';
 import Ql from './pages/technologies/Ql';
