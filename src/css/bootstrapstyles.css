@@ -1157,9 +1157,44 @@ box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.32);
   font-size: 15px;
 }
 } */
-@media only screen and (min-device-pixel-ratio: 1.5),
-       only screen and (-webkit-min-device-pixel-ratio: 1.5),
-       only screen and (min-resolution: 144dpi){
+@media only screen and (min-device-pixel-ratio: 1.25),
+       only screen and (-webkit-min-device-pixel-ratio: 1.25)
+     {
+      .exp{
+        position: absolute;
+        z-index: 10;
+        top: 10% ;
+        left: 55%;
+        height: 500px ;
+        display: flex;
+        align-items: start;
+        justify-content: end;
+      }
+      .exp .banner_frame{
+       
+         height: 100%;
+       }
+     }
+     @media only screen and (min-device-pixel-ratio: 1.5),
+       only screen and (-webkit-min-device-pixel-ratio: 1.5)
+     {
+      .exp{
+        position: absolute;
+        z-index: 10;
+        top: 18% ;
+        left: 54%;
+        height: 340px ;
+        display: flex;
+        align-items: start;
+        justify-content: end;
+      }
+      .exp .banner_frame{
+         height: 100%;
+       }
+     }
+@media only screen and (min-device-pixel-ratio: 1.75),
+       only screen and (-webkit-min-device-pixel-ratio: 1.75)
+     {
  
   .services{
     height: 1800px;
@@ -1178,9 +1213,8 @@ box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.32);
     justify-content:center;
    }
   .exp .banner_frame{
-   
+   background-color: red;
     height: 100%;
-   
   }
 
   .animationDiv{
