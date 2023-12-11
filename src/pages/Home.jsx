@@ -221,7 +221,7 @@ function Home() {
         <Nav/>
         <section className="banner p-0 container-fluid  m-0 ">
             <img className='b_img  p-0  m-0' src={bannerImg1} alt="bannerImg1" />
-           <div className="banner-container">
+           <div className="banner-container ">
                <div className="baner-sub-container">
                <h1 className='banner_welcome bold font-weight-bold'>WELCOME TO</h1>
                 <img className='banner_logo' src={logo1} alt="logo" />

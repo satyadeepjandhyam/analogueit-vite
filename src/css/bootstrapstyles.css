@@ -1,7 +1,6 @@
 body{
     margin: 0px;
     font-family: 'Jost' !important;
-   
 }
 
 .bg-primary{
@@ -10,11 +9,9 @@ body{
 .Headder{
     width: 100%;
     height: 100px;
-    
     z-index: 100;
 }
 .Headder .logo{
-
     width: 30%;
     height: 100px;
 }
@@ -44,17 +41,22 @@ body{
 }
 .Headder .logo a img{
   height: 90px;
-
 }
 .banner{
     height: 80%;
     position: relative;
     top: 90px;
+    padding: 0px;
+    margin: 0%;
 }
 .b_img{
     width: 100%;
     height: 100vh;
     z-index: -1;   
+    padding: 0px;
+    object-fit: fill;
+    margin: 0px;
+   
 }
 .showDiv1{
   position: absolute;
@@ -63,14 +65,12 @@ body{
   background-color: white;
   display: none;
   padding: 0px;
-  
 }
 .showDiv1 li{
   height: fit-content;
   width: 100%;
   list-style: none;
   padding: 10px;
-  
 }
 .showDiv1 li a{
   text-decoration: none;
@@ -96,7 +96,6 @@ body{
   width: 100%;
   list-style: none;
   padding: 10px;
-  
 }
 .showDiv2 li a{
   text-decoration: none;
@@ -108,6 +107,7 @@ body{
 .showDiv2 li:hover{
   background: linear-gradient(92.51deg, #0D2B67 0.67%, #05527D 101.68%);
 }
+
 .banner-container{
     position: absolute;
    display: flex;
@@ -120,6 +120,8 @@ body{
     top: 100px;
     width: 100%;
     height: 100%;
+    padding: 0px;
+    margin: 0px;
 }
 
 .baner-sub-container{
@@ -147,11 +149,9 @@ body{
     border-radius: 30px;
   }
   .banner_logo{
-  
     max-height: 70%;
     margin: 0px;
     padding: 0px;
-
   }
   .exp{
     position: absolute;
@@ -1157,23 +1157,9 @@ box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.32);
   font-size: 15px;
 }
 } */
-@media only screen
-  and (min-width: 19020px)
-  and (min-height: 1080px)
-  and (min--moz-device-pixel-ratio: 1.5),
-       only screen
-  and (min-width: 19020px)
-  and (min-height: 1080px)
-  and (-o-min-device-pixel-ratio: 3/2),
-       only screen
-  and (min-width: 19020px)
-  and (min-height: 1080px)
-  and (-webkit-min-device-pixel-ratio: 1.5),
-       only screen
-  and (min-width: 19020px)
-  and (min-height: 1080px)
-  and (min-device-pixel-ratio: 1.5)
-  and (min-resolution: 144dpi){
+@media only screen and (min-device-pixel-ratio: 1.5),
+       only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi){
  
   .services{
     height: 1800px;
@@ -1191,17 +1177,6 @@ box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.32);
     align-items: end;
     justify-content:center;
    }
-   .exp{
-    position: absolute;
-    z-index: 10;
-    top: 10% ;
-    left: 55%;
-    height: 500px;
-    background-color: red;
-    display: flex;
-    align-items: start;
-    justify-content: end;
-  }
   .exp .banner_frame{
    
     height: 100%;
