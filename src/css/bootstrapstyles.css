@@ -139,7 +139,6 @@ body{
     position: relative;
 }
 .banner_btn{
-   
     height: 50px;
     width: 150px;
     background-color: black;
@@ -155,10 +154,9 @@ body{
 
   }
   .exp{
-    /* width: 50%; */
     position: absolute;
     z-index: 10;
-    top: 10% !important;
+    top: 10% ;
     left: 55%;
     height: 500px ;
     display: flex;
@@ -216,7 +214,6 @@ body{
   }
   .services .servicesBackground{
     height: 2300px !important;
-    
   }
   .cardBody{
     overflow: hidden;
@@ -232,7 +229,6 @@ body{
     justify-content: start;
     row-gap: 30px;
     opacity: 0;
-   
 }
 .cardsBody .card-transform-left-to-right{
     height: 450px;
@@ -244,7 +240,6 @@ body{
     justify-content: start;
     row-gap: 30px;
     opacity: 0;
-    
     animation: transform-left-to-right 2s ease-out;
     animation-fill-mode: forwards;
 }
@@ -1162,17 +1157,24 @@ box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.32);
   font-size: 15px;
 }
 } */
-@media only screen and (min-width: 1200px) {
-  .exp{
-    position: absolute;
-    z-index: 10;
-    top: 20%;
-    left: 55%;
-    height: 60%;
-    display: flex;
-    align-items: start;
-    justify-content: end;
-  }  
+@media only screen
+  and (min-width: 19020px)
+  and (min-height: 1080px)
+  and (min--moz-device-pixel-ratio: 1.5),
+       only screen
+  and (min-width: 19020px)
+  and (min-height: 1080px)
+  and (-o-min-device-pixel-ratio: 3/2),
+       only screen
+  and (min-width: 19020px)
+  and (min-height: 1080px)
+  and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen
+  and (min-width: 19020px)
+  and (min-height: 1080px)
+  and (min-device-pixel-ratio: 1.5)
+  and (min-resolution: 144dpi){
+ 
   .services{
     height: 1800px;
     position: relative;
@@ -1181,7 +1183,25 @@ box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.32);
   .services .servicesBackground{
     height: 100% !important;
   }
- 
+  .baner-sub-container{
+    height:20%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content:center;
+   }
+   .exp{
+    position: absolute;
+    z-index: 10;
+    top: 10% ;
+    left: 55%;
+    height: 500px;
+    background-color: red;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+  }
   .exp .banner_frame{
    
     height: 100%;
