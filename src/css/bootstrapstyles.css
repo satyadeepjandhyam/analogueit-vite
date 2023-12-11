@@ -610,7 +610,8 @@ body{
 .testimonialCard:hover{
   height: 100%;
   width: 25%;
-  background-color:#0F71E4;
+  background: linear-gradient(92.51deg, #0D2B67 0.67%, #05527D 101.68%);
+  color: white;
 }
 .tcHead{
   display: flex;

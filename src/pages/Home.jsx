@@ -275,7 +275,7 @@ function Home() {
             </section>
             <div className="container-fluid our-process d-flex flex-column align-items-center">
                 <div className='text-center text-white'><h1>Our process</h1></div>
-                <img className="" src={processImg} alt="" />
+                <img className='img-fluid' src={processImg} alt="" />
             </div>
             {/* <AboutCarsoule/> */}
             <section className="projectSection ">

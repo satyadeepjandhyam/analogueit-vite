@@ -1,4 +1,7 @@
 .our-process{
     background-image:linear-gradient(112.25deg, #03314B 0%, #054A71 100%);
-    ;
+    height: 90vh;
+}
+.our-process img{
+    height: 90%;
 }
