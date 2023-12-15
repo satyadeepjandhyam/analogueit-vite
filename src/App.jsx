@@ -21,6 +21,11 @@ import ReactNative from './pages/technologies/ReactNative';
 import View from './pages/technologies/View';
 import WebFrameWork from './pages/technologies/WebFrameWork';
 import EcommerceApp from './pages/our products/EcommerceApp';
+
+// service imports
+import Uiuxdesign from './pages/services/Uiuxdesign';
+import Webdevelopment from './pages/services/Webdevelopment';
+import MobileApp from './pages/services/MobileApp';
 function App() {
   return (
     <BrowserRouter>
@@ -46,6 +51,10 @@ function App() {
         <Route path='/nosql' element={<NoSqlDb/>}/>
         {/* routes for our products */}
         <Route path='/Ecommerce' element={<EcommerceApp/>}/>
+        <Route path='/Uiuxdevelopment' element={<Uiuxdesign/>}/>
+        <Route path='/Webdevelopment' element={<Webdevelopment/>}/>
+        
+        <Route path='/MobileAppdevelopment' element={<MobileApp/>}/>
         
       </Routes>
     </BrowserRouter>

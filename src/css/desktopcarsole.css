@@ -12,22 +12,21 @@
     background-image: url("../assets/Group 115.png");
    
 }
+.carsole-head{
+  height: 20%;
+}
 .carsole-body{
+  background-color: red;
     height: 80%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    
-   
 }
 
 .desktop-carsole .swiper {
     width: 80%;
     height: 400px;
-   
-   
-   
   }
   
   .desktop-carsole .swiper .swiper-slide {
@@ -42,4 +41,63 @@
     display: block;
     width: 300px;
     height: 300px;
+  }
+
+  .carosel-body{
+    height: 80%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* background-color: yellow; */
+    overflow: hidden;
+    
+  }
+  .carosel-body .caroselSlide{
+    flex: 0 0 30%;
+    height: 60%;
+    width: 400px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transform: translateX(-50%); */
+  }
+  .carosel-slide-none{
+    display: none;
+  }
+  .caroselSlide .desktop-carosel-active-image{
+    width: 350px !important;
+    height: 120%;
+    pointer-events: none;
+  }
+  .caroselSlide .desktop-carosel-image{
+    width: 300px !important;
+    height: 100%;
+   
+  }
+  .carosel-container-desktop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+  }
+  .arrow-back{
+    font-size: 3rem;
+    /* position: relative;
+    top: 50%;
+    right: 500px; */
+    color:  #103681;
+    cursor: pointer;
+    user-select: none;
+  }
+  .arrow-frount{
+    font-size: 3rem;
+    /* position: relative;
+    top: 43%;
+    left: 500px; */
+   color:  #103681;
+   
+    cursor: pointer;
+    user-select: none;
   }

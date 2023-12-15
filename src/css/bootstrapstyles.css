@@ -139,6 +139,7 @@ body{
     text-shadow: 5px 10px 6px #00000080;
     font-weight: bold;
     position: relative;
+    
 }
 .banner_btn{
     height: 50px;
@@ -190,7 +191,7 @@ body{
     display: flex;
     align-items: center;
     column-gap: 30px;
-    animation: move-rtl 7s linear infinite;
+    animation: move-rtl 30s linear infinite;
   }
   
   .animationDiv img{
@@ -213,7 +214,7 @@ body{
     padding: 100px;
   }
   .services .servicesBackground{
-    height: 2300px !important;
+    height: 100% ;
   }
   .cardBody{
     overflow: hidden;
@@ -1196,14 +1197,15 @@ box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.32);
        only screen and (-webkit-min-device-pixel-ratio: 1.75)
      {
  
-  .services{
-    height: 1800px;
-    position: relative;
-    overflow: hidden;
-  }
-  .services .servicesBackground{
-    height: 100% !important;
-  }
+      .services{
+        height: auto !important;
+        position: relative;
+        padding: 100px;
+      }
+      .services .servicesBackground{
+        height: 100%;
+        
+      }
   .baner-sub-container{
     height:20%;
     

@@ -1,6 +1,6 @@
 import React from 'react'
 import Nav from '../components/navbar/nav'
-import bannerImg1 from '../assets/New folder/Mask group.png'
+import bannerImg1 from '../assets/New folder/Layer 1.png'
 import logo1 from '../assets/logo_our1.png'
 import Frame from '../assets/New folder/Frame 140.png'
 import aboutImg from '../assets/New folder/image 47.png'
@@ -19,7 +19,7 @@ import { useInView } from 'react-intersection-observer';
 import AboutCarsoule from '../components/carsoule/aboutcarsole/aboutCarsoule'
 // import Mobilecarsole from '../components/carsoule/mobilecarsole/mobilecarsole'
 import Desktopcarsole from '../components/carsoule/desktopcarsole/desktopcarsole'
-import { bannerImages } from '../data/data'
+import { bannerImages, serviceItems } from '../data/data'
 import Mobilecarsole from '../components/carsoule/mobilecarsole/mobilecarsole'
 import "bootstrap/dist/css/bootstrap.css"
 import "@fontsource/jost";
@@ -27,6 +27,9 @@ import "../css/awards.css";
 import "../css/ourprocess.css"
 import processImg from "../assets/Group 109.png";
 import { businessProfiles } from '../data/data'
+
+
+
 function Home() {
    const [revealUpToDown,setRevealUpToDown]=useState({
     "background-color" : "red"
@@ -79,142 +82,8 @@ function Home() {
         },
 
     ];
-    // const bannerImages=[
-    //     {
-    //         image:require("../assets/animation/ajax.png")
-    //     },
-    //     {
-    //         image:require("../assets/animation/android.png")
-    //     },
-    //     {
-    //         image:require("../assets/animation/angular.png")
-    //     },
-    //     {
-    //         image:require("../assets/animation/bootstrap.png")
-    //     },
-    //     {
-    //         image:require("../assets/animation/css.png")
-    //     },
-    //     {
-    //         image:require("../assets/animation/expressjs.png")
-    //     },
-    //     {
-    //         image:require("../assets/animation/flutter.png")
-    //     },
-    //     {
-    //         image:require("../assets/animation/html.png")
-    //     },
-    //     {
-    //         image:require("../assets/animation/ionic.png")
-    //     },
-    //     {
-    //         image:require("../assets/animation/ios.png")
-    //     },
-    //     {
-    //         image:require("../assets/animation/javascript.png")
-    //     },
-    //     {
-    //         image:require("../assets/animation/json.png")
-    //     },
-    //     {
-    //         image:require("../assets/animation/kotlin.png")
-    //     },
-    //     {
-    //         image:require("../assets/animation/mongodb.png")
-    //     },
-    //     {
-    //         image:require("../assets/animation/mysql.png")
-    //     },
-    //     {
-    //         image:require("../assets/animation/nodejs.png")
-    //     },
-    //     {
-    //         image:require("../assets/animation/php.png")
-    //     },
-    //     {
-    //         image:require("../assets/animation/python.png")
-    //     },
-    //     {
-    //         image:require("../assets/animation/react.png")
-    //     },
-    //     {
-    //         image:require("../assets/animation/reactnative.png")
-    //     },
-    //     {
-    //         image:require("../assets/animation/sqlite.png")
-    //     },
-    //     {
-    //         image:require("../assets/animation/tailwindcss.png")
-    //     },
-    //     {
-    //         image:require("../assets/animation/vue.png")
-    //     }
-        
 
-    // ];
-    const serviceItems=[
-        {
-            image:img1,
-            headding:"UI/UX Development",
-            content:"We create sleek and elegantly appealing UI/UX designs that increase user interaction with applications."
-        },
-        {
-            image:img1,
-            headding:"web Development",
-            content:"We create sleek and elegantly appealing UI/UX designs that increase user interaction with applications."
-        },
-        {
-            image:img1,
-            headding:"Mobile Development",
-            content:"We create sleek and elegantly appealing UI/UX designs that increase user interaction with applications."
-        },
-        {
-            image:img1,
-            headding:"Digital Development",
-            content:"We create sleek and elegantly appealing UI/UX designs that increase user interaction with applications."
-        },
-        {
-            image:img1,
-            headding:"Tech support",
-            content:"We are one of the top digital marketing companies in India as we converge on the business growth of our clients"
-        },
-        {
-            image:img1,
-            headding:"It staffing and recruitment",
-            content:"We are one of the top digital marketing companies in India as we converge on the business growth of our clients"
-        },
-        {
-            image:img1,
-            headding:"out Sourcing",
-            content:"We are one of the top digital marketing companies in India as we converge on the business growth of our clients"
-        },
-        {
-            image:img1,
-            headding:"It consulting",
-            content:"We are one of the top digital marketing companies in India as we converge on the business growth of our clients"
-        },
-        {
-            image:img1,
-            headding:"Cloud services",
-            content:"We are one of the top digital marketing companies in India as we converge on the business growth of our clients"
-        },
-        {
-            image:img1,
-            headding:"AI",
-            content:"We are one of the top digital marketing companies in India as we converge on the business growth of our clients"
-        },
-        {
-            image:img1,
-            headding:"ML",
-            content:"We are one of the top digital marketing companies in India as we converge on the business growth of our clients"
-        },{
-            image:img1,
-            headding:"IOT",
-            content:"We are one of the top digital marketing companies in India as we converge on the business growth of our clients"
-        },
-        
-        
-    ];
+    
 
     return (
         <>
@@ -277,7 +146,7 @@ function Home() {
                 <div className='text-center text-white'><h1>Our process</h1></div>
                 <img className='img-fluid' src={processImg} alt="" />
             </div>
-            {/* <AboutCarsoule/> */}
+            <AboutCarsoule/>
             <section className="projectSection ">
                 <img src={abtUsBackground} alt="" className="project-section-backGround" />
                 <div className="full_section ">
@@ -296,8 +165,8 @@ function Home() {
                     </div>
                 </div>
             </section>
-            {/* <Mobilecarsole/>
-            <Desktopcarsole/>  */}
+            <Mobilecarsole/>
+            <Desktopcarsole/> 
             <section className="awards d-flex align-items-center justify-content-center">
                
                 <div className="awardDiv container  bg-white position-relative d-flex flex-column justify-content-evenly align-items-center">

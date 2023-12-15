@@ -24,11 +24,11 @@ function Nav() {
       <li  className="dropdown nav-item p-1" >
         <a href="#" className='nav-link d-flex flex-column align-items-center justify-content-center text-white'><BiSolidCog className='icon_i h3'/> <span>Services</span> </a>
         <ul className="showDiv1">
-          <li><a href="uxuidevelopment.html">UX/UI Development</a></li>
-          <li><a href="webdevelopment.html">Web Development</a></li>
+          <li><NavLink to="/Uiuxdevelopment" >UX/UI Development</NavLink></li>
+          <li><NavLink to="/Webdevelopment">Web Development</NavLink></li>
          
-          <li><a href="mobiledevelopment.html">Mobile Development</a></li>
-          <li><a href="digitalmarketing.html">Digital Development</a></li>
+          <li><NavLink to="/MobileAppdevelopment">Mobile Development</NavLink></li>
+          <li><NavLink to="/digitalmarketing">Digital Development</NavLink></li>
         </ul>
       </li>
       <li className="nav-item p-1 dropdown">

@@ -4,7 +4,7 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center !important;
     position: relative;
     flex-direction: column;
     top: 0px !important;
@@ -46,7 +46,7 @@
       background-image: url("../assets/mobilecarsolebackground.png");
      
   }
-  .swiper {
+  /* .swiper {
       width: 70%;
       height: 70vh;
     }
@@ -62,7 +62,7 @@
       display: block;
       width: 200px;
       height: 400px;
-    }
+    } */
   }
   @media only screen and (min-width: 1200px){
     .mobilecarsole{
@@ -79,7 +79,7 @@
       background-image: url("../assets/mobilecarsolebackground.png");
      
   }
-  .swiper {
+  /* .swiper {
       width: 70%;
       height: 70vh;
     }
@@ -95,6 +95,70 @@
       display: block;
       width: 200px;
       height: 400px;
-    }
+    } */
   }
 
+  .carosel-body{
+    height: 80%;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    row-gap: 0px;
+    position: relative;
+    
+  }
+  .carosel-body .caroselSlide{
+    flex: 0 0 30%;
+    height: 60%;
+    width: 400px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transform: translateX(-50%); */
+  }
+  .carosel-slide-none{
+    display: none;
+  }
+  .caroselSlide .carosel-active-image{
+    width: 250px;
+    height: 120%;
+   pointer-events: none;
+  }
+  .caroselSlide .carosel-image{
+    width: 200px;
+    height: 100%;
+   
+  }
+  .carosel-container{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  carosel-body .arrow-back{
+    font-size: 3rem;
+   
+    /* position: relative;
+    top: 50%;
+    right: 500px; */
+    color:  #103681;
+    cursor: pointer;
+    user-select: none;
+  }
+  .carosel-body .arrow-frount{
+    font-size: 3rem;
+   
+    /* position: relative;
+    top: 43%;
+    left: 500px; */
+    color:  #103681;
+    cursor: pointer;
+    user-select: none;
+  }
