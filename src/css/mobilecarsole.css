@@ -162,3 +162,17 @@
     cursor: pointer;
     user-select: none;
   }
+
+  @media only screen and (min-device-pixel-ratio: 1.5),
+  only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+    .caroselSlide .carosel-active-image{
+      width: 230px;
+      height: 120%;
+     pointer-events: none;
+    }
+    .caroselSlide .carosel-image{
+      width: 190px;
+      height: 100%;
+     
+    }
+  }

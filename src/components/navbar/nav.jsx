@@ -10,17 +10,17 @@ import "bootstrap/dist/css/bootstrap.css"
 function Nav() {
     return (
         <>
-<header id="header" className='Headder bg-primary m-0 position-fixed'>
+<header id="header" className='fixed-top Headder bg-primary m-0 '>
   <div className="container-fluid d-flex align-items-center justify-content-evenly  gap-5">
   <div className="logo">
       
     <a className='w-10 h-10' href="index.html"><img className='img-fluid' src={logo1} alt='home' /></a>
   
   </div>
-  <nav id="navbar" className="navbar navbar-expand-lg ">
+  <nav id="navbar" className="navbar navbar-expand-lg">
     <ul className='navbar-nav gap-4'>
       <li className="nav-item p-1 "><NavLink activeStyle="active" className=' nav-link d-flex flex-column align-items-center justify-content-center text-white' to={"/"}><BiSolidHome className='icon_i h3'/>Home</NavLink></li>
-      <li className="nav-item p-1"><NavLink className='active nav-link d-flex flex-column align-items-center justify-content-center text-white' to="/about" ><BiSolidInfoCircle className='icon_i h3'/> About</NavLink></li>
+      <li className="nav-item p-1"><NavLink className=' nav-link d-flex flex-column align-items-center justify-content-center text-white' to="/about" ><BiSolidInfoCircle className='icon_i h3'/> About</NavLink></li>
       <li  className="dropdown nav-item p-1" >
         <a href="#" className='nav-link d-flex flex-column align-items-center justify-content-center text-white'><BiSolidCog className='icon_i h3'/> <span>Services</span> </a>
         <ul className="showDiv1">

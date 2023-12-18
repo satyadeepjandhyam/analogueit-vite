@@ -101,3 +101,24 @@
     cursor: pointer;
     user-select: none;
   }
+
+  @media only screen and (min-device-pixel-ratio: 1.5),
+only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+  .caroselSlide .desktop-carosel-active-image{
+    width: 250px !important;
+    height: 120%;
+    pointer-events: none;
+  }
+  .caroselSlide .desktop-carosel-image{
+    width: 200px !important;
+    height: 100%;
+  }
+  .carosel-container-desktop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+  }
+ 
+
+}

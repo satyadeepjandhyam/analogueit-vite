@@ -61,10 +61,10 @@ discription:["At Analogue IT Solutions, we transform your ideas into meaningful 
   const nextSlide = () => {
     setCurrent(current === items.length - 1 ? 0 : current + 1)
 
-}
-const prevSlide = () => {
-    setCurrent(current === 0 ? items.length - 1 : current - 1)
-}
+  }
+  const prevSlide = () => {
+      setCurrent(current === 0 ? items.length - 1 : current - 1)
+  }
 
   return (
     <>
