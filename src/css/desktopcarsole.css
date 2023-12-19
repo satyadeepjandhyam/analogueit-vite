@@ -9,22 +9,38 @@
     top: 0px;
     background-repeat: no-repeat; 
     background-size: cover;
-    background-image: url("../assets/Group 115.png");
+    background-image: url("../assets/New folder/desktopbg.png");
    
 }
+
+
 .carsole-head{
   height: 20%;
 }
-.carsole-body{
-  background-color: red;
-    height: 80%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+.carosel-desktop-body{
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 60%;
+  height: 70%;
+  border-radius: 20px;
+  
+  box-shadow: 3px 4px 4px 2px #89848480;
 
-.desktop-carsole .swiper {
+}
+.carosel-mobile-swiper{
+  width: 100%;
+  height: 100%;
+}
+.carosel-mobile-swiper .carosel-mobile-slide{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100% !important;
+}
+.carosel-mobile-swiper .carosel-mobile-slide img{
+  height: 80% !important;
+  width: 80% !important;
+}
+/* .desktop-carsole .swiper {
     width: 80%;
     height: 400px;
   }
@@ -36,7 +52,7 @@
     height: 300px !important;
    
   }
-  
+   */
   .desktop-carsole .swiper .swiper-slide img {
     display: block;
     width: 300px;
@@ -57,7 +73,7 @@
   .carosel-body .caroselSlide{
     flex: 0 0 30%;
     height: 60%;
-    width: 400px; 
+    width: 200px; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,6 +86,7 @@
     width: 350px !important;
     height: 120%;
     pointer-events: none;
+   
   }
   .caroselSlide .desktop-carosel-image{
     width: 300px !important;

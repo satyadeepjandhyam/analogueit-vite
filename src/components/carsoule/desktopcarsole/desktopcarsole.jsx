@@ -6,10 +6,10 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { Navigation } from 'swiper/modules';
+import {Pagination, Navigation,EffectCreative } from 'swiper/modules';
 import 'swiper/css/effect-fade'
 
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+
 import { IoArrowForwardCircleSharp,IoArrowBackCircleSharp } from "react-icons/io5";
 
 
@@ -75,6 +75,9 @@ function Desktopcarsole() {
         if (index == current || index === current - 1 || index === current + 1 && index != 0) {
             return "caroselSlide";
         }
+        else if(index== current+2 || index== current-2){
+            return "caroselSlide";
+        }
         else return "carosel-slide-none";
     }
     const [current, setCurrent] = useState(Math.ceil(items.length / 2));
@@ -90,7 +93,53 @@ function Desktopcarsole() {
 
     return (
         <>
-            <div className="desktop-carsole d-flex flex-column align-items-center justify-content-center">
+            <div className="desktop-carsole">
+                <div className="carsole-head m-0 w-100  d-flex flex-column align-items-center justify-content-center">
+                    <h1>Our desktop Apps</h1>
+                    <p>We are ready to help with these services</p>
+
+                </div>
+                <div className="carosel-desktop-body m-0 p-0">
+                   <Swiper
+                    slidesPerView={1}
+                    spaceBetween={30}
+                    pagination={{
+                      clickable: true,
+                    }}
+                    grabCursor={true}
+                    effect={'creative'}
+                    creativeEffect={{
+                        prev: {
+                          shadow: true,
+                          translate: ['-125%', 0, -800],
+                          rotate: [0, 0, -90],
+                        },
+                        next: {
+                          shadow: true,
+                          translate: ['125%', 0, -800],
+                          rotate: [0, 0, 90],
+                        },
+                      }}
+                      loop={true}
+                    modules={[Pagination,EffectCreative]}
+                    className="carosel-mobile-swiper"
+                   >
+                   {items.map((item, index) => {
+                            //    return <div className='caroselSlide'>{ index == current ? <div key={index} className="caroseldiv"><img src={item.image} alt="caroselImg" /></div> : "" }</div>
+                            return <SwiperSlide className='carosel-mobile-slide'><img className={current == index ? "desktop-carosel-active-image" : "desktop-carosel-image"} src={item.image} alt="caroselImg" /></SwiperSlide>
+                        })}
+                   </Swiper>
+                    {/* <div className="carosel-container-desktop">
+                        {items.map((item, index) => {
+                            //    return <div className='caroselSlide'>{ index == current ? <div key={index} className="caroseldiv"><img src={item.image} alt="caroselImg" /></div> : "" }</div>
+                            return <div key={index} className={getClassForCarosel(index)}><img className={current == index ? "desktop-carosel-active-image" : "desktop-carosel-image"} src={item.image} alt="caroselImg" /></div>
+                        })}
+                    </div> */}
+                    
+
+                </div>
+            </div>
+            {/* <div className="desktop-carsole d-flex flex-column align-items-center justify-content-center">
                 <div className="carsole-head m-0 w-100  d-flex flex-column align-items-center justify-content-center">
                     <h1>Our desktop Apps</h1>
                     <p>We are ready to help with these services</p>
@@ -106,7 +155,7 @@ function Desktopcarsole() {
                         </div>
                         <IoArrowForwardCircleSharp onClick={prevSlide} className='arrow-frount'/>
 
-                </div>
+                </div> */}
                 {/* <Swiper
         effect={'coverflow'}
         grabCursor={true}
@@ -141,7 +190,7 @@ function Desktopcarsole() {
 
         
       </Swiper> */}
-            </div>
+            {/* </div> */}
         </>
     )
 }

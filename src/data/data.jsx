@@ -222,7 +222,7 @@ export const serviceItems=[
     },
     {
         image:img2,
-        headding:"web Development",
+        headding:"Web Development",
         content:"We create sleek and elegantly appealing UI/UX designs that increase user interaction with applications."
     },
     {
@@ -237,17 +237,17 @@ export const serviceItems=[
     },
     {
         image:img5,
-        headding:"Tech support",
+        headding:"Tech Support",
         content:"We are one of the top digital marketing companies in India as we converge on the business growth of our clients"
     },
     {
         image:img6,
-        headding:"It staffing and recruitment",
+        headding:"IT Staffing & Recruitment",
         content:"We are one of the top digital marketing companies in India as we converge on the business growth of our clients"
     },
     {
         image:img7,
-        headding:"out Sourcing",
+        headding:"Out Sourcing",
         content:"We are one of the top digital marketing companies in India as we converge on the business growth of our clients"
     },
     {

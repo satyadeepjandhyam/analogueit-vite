@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "../../../css/mobilecarsole.css"
-import {Swiper,SwiperSlide} from "swiper/react"
-import { IoArrowForwardCircleSharp,IoArrowBackCircleSharp } from "react-icons/io5";
+import { Swiper, SwiperSlide } from "swiper/react"
+import { IoArrowForwardCircleSharp, IoArrowBackCircleSharp } from "react-icons/io5";
 
 // Import Swiper styles
 import 'swiper/css';
@@ -103,53 +103,66 @@ function Mobilecarsole() {
 
     ]);
 
-  const  getClassForCarosel=(index)=>{
-        if(index==current || index===current-1 || index===current+1 && index!=0){
+    const getCaroselImageCss = (index) => {
+        if (index === current) {
+            return "carosel-active-image"
+        } else if (index === current - 1 || index === current + 1) {
+            return "carosel-image"
+        } else {
+            return "carosel-image-two"
+        }
+    }
+
+    const getClassForCarosel = (index) => {
+        if (index === current || index === current - 1 || index === current + 1 && index != 0) {
             return "caroselSlide";
+        }
+        else if ((index === current + 2) || (index === current - 2)) {
+            return "caroselSlide-two";
         }
         else return "carosel-slide-none";
     }
-    const [current,setCurrent]=useState(Math.ceil(items.length/2));
-    
-    
-    const nextSlide =() =>{
-            setCurrent(current === items.length-1 ?Math.ceil(items.length/2):current+1)
-          
-    }
-    const prevSlide =()=>{
-        setCurrent(current === 0 ?items.length-1:current-1)
-    }
-   
+    const [current, setCurrent] = useState(Math.ceil(items.length / 2));
 
-    
 
-    const carsoleTransformStyle={
-        transform:`translate3d(-${1 * 100}%)`
-       }
+    const nextSlide = () => {
+        setCurrent(current === items.length - 3 ? Math.ceil(items.length / 2) : current + 1)
+
+    }
+    const prevSlide = () => {
+        setCurrent(current === 3 ? items.length - 3 : current - 1)
+    }
+
+
+
+
+    const carsoleTransformStyle = {
+        transform: `translate3d(-${1 * 100}%)`
+    }
     return (
         <>
-        <section className="mobilecarsole d-flex flex-column gap-0 align-items-center justify-content-center">
-        <div className="carsole-head w-100 d-flex flex-column gap-0 align-items-center justify-content-center">
-                <h1>Our Mobile Apps</h1>
-                <p>We are ready to help with these services</p>
-         </div>
-         {/* <IoArrowBackCircleSharp onClick={nextSlide} className='arrow-back'/>
+            <section className="mobilecarsole ">
+                <div className="carsole-head w-100 d-flex flex-column gap-0 align-items-center justify-content-center">
+                    <h1>Our Mobile Apps</h1>
+                    <p>We are ready to help with these services</p>
+                </div>
+                {/* <IoArrowBackCircleSharp onClick={nextSlide} className='arrow-back'/>
          <IoArrowForwardCircleSharp onClick={prevSlide} className='arrow-frount'/> */}
-        <div className="carosel-body">
-        <IoArrowBackCircleSharp onClick={nextSlide} className='arrow-back'/>
-                    
-                   <div className="carosel-container">
-                   {items.map((item, index) => {
-                    //    return <div className='caroselSlide'>{ index == current ? <div key={index} className="caroseldiv"><img src={item.image} alt="caroselImg" /></div> : "" }</div>
-                        return <div key={index}  className={getClassForCarosel(index)}><img  className={current==index ?"carosel-active-image":"carosel-image"} src={item.image} alt="caroselImg" /></div>
-                   })}
-                   </div>
-                   <IoArrowForwardCircleSharp onClick={prevSlide} className='arrow-frount'/>
-                   
-        </div>
+                <div className="carosel-body">
+                    <IoArrowBackCircleSharp onClick={nextSlide} className='arrow-back' />
 
-        </section>
-        {/* <div className="mobilecarsole">
+                    <div className="carosel-container">
+                        {items.map((item, index) => {
+                            //    return <div className='caroselSlide'>{ index == current ? <div key={index} className="caroseldiv"><img src={item.image} alt="caroselImg" /></div> : "" }</div>
+                            return <div key={index} className={getClassForCarosel(index)}><img className={getCaroselImageCss(index)} src={item.image} alt="caroselImg" /></div>
+                        })}
+                    </div>
+                    <IoArrowForwardCircleSharp onClick={prevSlide} className='arrow-frount' />
+
+                </div>
+
+            </section>
+            {/* <div className="mobilecarsole">
         <div className="carsole-head">
                 <h1>Our Mobile Apps</h1>
                 <p>We are ready to help with these services</p>
@@ -189,7 +202,7 @@ function Mobilecarsole() {
         
       </Swiper>
         </div> */}
-        {/* <div className="mobilecarsole">
+            {/* <div className="mobilecarsole">
             <div className="carsole-head">
                 <h1>Our Mobile Apps</h1>
                 <p>We are ready to help with these services</p>
@@ -211,7 +224,7 @@ function Mobilecarsole() {
             </div>
         </div> */}
 
-        
+
         </>
     )
 }

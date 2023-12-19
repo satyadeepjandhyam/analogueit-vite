@@ -100,7 +100,7 @@
 
   .carosel-body{
     height: 80%;
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -113,51 +113,65 @@
     
   }
   .carosel-body .caroselSlide{
-    flex: 0 0 30%;
+    flex: 0 0 20%;
     height: 60%;
-    width: 400px; 
+   /* background-color: red; */
     display: flex;
     align-items: center;
     justify-content: center;
+    /* background-color: red; */
+    /* transform: translateX(-50%); */
+  }
+  .carosel-body .caroselSlide-two{
+    flex: 0 0 15%;
+    height: 60%;
+   /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
     /* transform: translateX(-50%); */
   }
   .carosel-slide-none{
     display: none;
   }
   .caroselSlide .carosel-active-image{
-    width: 250px;
-    height: 120%;
+    width: 220px;
+    height: 110%;
    pointer-events: none;
+   transition-duration: 0.1ms;
   }
   .caroselSlide .carosel-image{
-    width: 200px;
-    height: 100%;
+    width: 180px;
+    height: 90%;
+   opacity: 0.5;
+   transition-duration: 0.5ms;
+  }
+  .caroselSlide-two .carosel-image-two{
+    width: 140px;
+    height: 70%;
+   opacity: 0.5;
+   transition-duration: 0.5ms;
    
   }
+  
   .carosel-container{
-    width: 80%;
+    width: 79%;
     height: 100%;
     display: flex;
+    flex-wrap:nowrap;
     align-items: center;
     justify-content: center;
-    
+    /* background-color: pink; */
   }
   carosel-body .arrow-back{
     font-size: 3rem;
-   
-    /* position: relative;
-    top: 50%;
-    right: 500px; */
     color:  #103681;
     cursor: pointer;
     user-select: none;
   }
   .carosel-body .arrow-frount{
     font-size: 3rem;
-   
-    /* position: relative;
-    top: 43%;
-    left: 500px; */
     color:  #103681;
     cursor: pointer;
     user-select: none;
@@ -174,5 +188,11 @@
       width: 190px;
       height: 100%;
      
+    }
+    .caroselSlide .carosel-image-two{
+      width: 150px;
+      height: 80%;
+     opacity: 0.5;
+     transition-duration: 0.5;
     }
   }

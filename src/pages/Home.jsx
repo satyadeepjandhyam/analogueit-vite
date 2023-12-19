@@ -9,7 +9,7 @@ import servicesBackGroundImg from '../assets/New folder/background_11 1.png'
 import img1 from'../assets/New folder/service1.png'
 import abtUsBackground from '../assets/New folder/hero-bg.jpg'
 import projectImg from '../assets/New folder/2.png'
-import awardImg from '../assets/New folder/image 63.png'
+// import awardImg from '../assets/New folder/image 63.png'
 import award1 from '../assets/New folder/clutch.png'
 import testi1 from '../assets/aiSandeepthi.jpeg'
 import Contact from '../components/contact/contact'
@@ -127,7 +127,7 @@ function Home() {
             <section ref={services} className="services  container-fluid   p-0 mt-5 mb-5">
                 <img src={servicesBackGroundImg} alt="" className="servicesBackground col-12 p-0 m-0 position-absolute " />
                 <div className="cards container-fluid position-relative d-flex flex-column align-items-center justify-content-center">
-                    <div className="p-4 m-5 text-white"><h1>Our servies</h1></div>
+                    <div className="p-4 m-5 text-white"><h1>Our Specialized Servies</h1></div>
                     <div className="cardsBody container-fluid align-items-center justify-content-center row column-gap-5 row-gap-5">
                        {serviceItems.map((items,i)=>{
                             return  <div key={i} className={isServiceRevealed? getAppropriateCardStyle(i):"card"}>
