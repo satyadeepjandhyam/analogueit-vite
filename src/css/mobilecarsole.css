@@ -145,13 +145,13 @@
     width: 180px;
     height: 90%;
    opacity: 0.5;
-   transition-duration: 0.5ms;
+   transition-duration: 0.1ms;
   }
   .caroselSlide-two .carosel-image-two{
     width: 140px;
     height: 70%;
    opacity: 0.5;
-   transition-duration: 0.5ms;
+   transition-duration: 0.1ms;
    
   }
   

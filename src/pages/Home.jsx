@@ -19,14 +19,14 @@ import { useInView } from 'react-intersection-observer';
 import AboutCarsoule from '../components/carsoule/aboutcarsole/aboutCarsoule'
 // import Mobilecarsole from '../components/carsoule/mobilecarsole/mobilecarsole'
 import Desktopcarsole from '../components/carsoule/desktopcarsole/desktopcarsole'
-import { bannerImages, serviceItems } from '../data/data'
+import { bannerImages, ourProcess, serviceItems } from '../data/data'
 import Mobilecarsole from '../components/carsoule/mobilecarsole/mobilecarsole'
 import "bootstrap/dist/css/bootstrap.css"
 import "@fontsource/jost";
 import "../css/awards.css";
 import "../css/ourprocess.css"
-import processImg from "../assets/Group 109.png";
-import { businessProfiles } from '../data/data'
+import processImg from "../assets/Group 123.png";
+import { businessProfiles } from '../data/data';
 
 
 
@@ -54,6 +54,8 @@ function Home() {
             return "card-transform-scale"
         }
    }
+
+   const [angles, setAngles] = useState([...Array(9)].map((_, i) => (i * 360) / 9));
 
     const testimonialItems = [
         {
@@ -95,7 +97,7 @@ function Home() {
                <h1 className='banner_welcome bold font-weight-bold'>WELCOME TO</h1>
                 <img className='banner_logo' src={logo1} alt="logo" />
                </div>
-                <button className='banner_btn'>KNOW MORE</button>
+                <button className='banner_btn '>KNOW MORE</button>
                 <div className="exp">
                     <img className='banner_frame' src={Frame} alt="logo" />
                     
@@ -144,7 +146,23 @@ function Home() {
             </section>
             <div className="container-fluid our-process d-flex flex-column align-items-center">
                 <div className='text-center text-white'><h1>Our process</h1></div>
-                <img className='img-fluid' src={processImg} alt="" />
+               
+                <div className="img-container">
+                <img className='ourprocess-img'  src={processImg} alt="img-process" />
+                <div className='our-process-img-container'>
+                {ourProcess.map((item,index)=>{
+                    return <img className='circle-images' key={index}  src={item.processImg}   alt="" />
+                })}
+                </div>
+                <div className='our-process-text-container'>
+                {ourProcess.map((item,index)=>{
+                    return <p className='text-white text-center' key={index}>{item.processData}</p>
+                })}
+                </div>
+                
+                {/* style={{transform: `rotate(${angles[index]}deg) translate(${100}px)`}} */}
+                {/* style={{transform: `rotate(calc(${360}deg/${9}*${index}))`}} */}
+                </div>
             </div>
             <AboutCarsoule/>
             <section className="projectSection ">
@@ -170,13 +188,13 @@ function Home() {
             <section className="awards d-flex align-items-center justify-content-center">
                
                 <div className="awardDiv container  bg-white position-relative d-flex flex-column justify-content-evenly align-items-center">
-                    <div className="awardivHead ">
+                    <div className="awardivHead d-flex align-items-center justify-content-center flex-column gap-2">
                         <img src={blueLogo} alt="blueLogo" />
-                        <h4>We are reviewed on</h4>
+                        <h4 className='fw-bold'>We are reviewed on</h4>
                     </div>
                     <div className="awardBody d-flex flex-row">
                         <div className="awardleft col-4">
-                            <h3 className='border-black'>Skip The Big Proises. Hire The Best Developers Backed By Developers Backed By Accolades.</h3>
+                            <h3 className='border-black fw-bold'>Skip The Big Promises. Hire The Best Developers Backed By Developers Backed By Accolades.</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maiores pariatur aliquid. Minus, odio? Eligendi repellendus, doloribus nesciunt nobis iusto molestiae fugiat est impedit nisi voluptatibus. Eos cupiditate iusto optio!</p>
                         </div>
                         <div className="awardright  d-flex flex-wrap align-items-center justify-content-evenly">

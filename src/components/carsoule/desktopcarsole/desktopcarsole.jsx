@@ -95,7 +95,7 @@ function Desktopcarsole() {
         <>
             <div className="desktop-carsole">
                 <div className="carsole-head m-0 w-100  d-flex flex-column align-items-center justify-content-center">
-                    <h1>Our desktop Apps</h1>
+                    <h1>Our Web Applications</h1>
                     <p>We are ready to help with these services</p>
 
                 </div>

@@ -18,13 +18,29 @@ background-color: antiquewhite;
     box-shadow: 2px 4px 4px 1px #00000080;
 
 }
+.imgBack{
+    width: 80% !important;
+    height: 100% !important;
+    
+     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgBack img{
+    width: 70%;
+    height: 100%;
+}
 .awardsdiv{
+    display: block;
     width: 15%;
-    height: 15%;
+    height: 25%;
+    /* background-color: yellow; */
 }
 .awardsdiv:hover{
-    
-    transform: scale(120%);
+  
+   
+   transform: scale(120%);
 }
 .link{
     text-decoration: none;

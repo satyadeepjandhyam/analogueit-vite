@@ -49,6 +49,16 @@ import img7 from'../assets/New folder/service7.png'
 import img8 from'../assets/New folder/service8.png'
 import img9 from'../assets/New folder/service9.png'
 
+//process images
+import processimg1 from '../assets/New folder/image 1.png'
+import processimg2 from '../assets/New folder/image 2.png'
+import processimg3 from '../assets/New folder/image 3.png'
+import processimg4 from '../assets/New folder/image 4.png'
+import processimg5 from '../assets/New folder/image 5.png'
+import processimg6 from '../assets/New folder/image 6.png'
+import processimg7 from '../assets/New folder/image 7.png'
+import processimg8 from '../assets/New folder/image 8.png'
+import processimg9 from '../assets/New folder/image 9.png'
 
 export const bannerImages = [
     {
@@ -252,12 +262,12 @@ export const serviceItems=[
     },
     {
         image:img8,
-        headding:"It consulting",
+        headding:"IT Consulting",
         content:"We are one of the top digital marketing companies in India as we converge on the business growth of our clients"
     },
     {
         image:img9,
-        headding:"Cloud services",
+        headding:"Cloud Services",
         content:"We are one of the top digital marketing companies in India as we converge on the business growth of our clients"
     },
     {
@@ -275,5 +285,45 @@ export const serviceItems=[
         content:"We are one of the top digital marketing companies in India as we converge on the business growth of our clients"
     },
     
+    
+];
+
+export const ourProcess=[
+    {
+        processImg:processimg1,
+        processData:"Meeting & understanding requirements with client"
+    },
+    {
+        processImg:processimg2,
+        processData:"stepping into client shoes & Alt rating /Suggesting the bussiness modal with multiple modals"
+    },
+    {
+        processImg:processimg3,
+        processData:"Requirement gathering &preparing sheeets for scum with stories"
+    },
+    {
+        processImg:processimg4,
+        processData:"Testing"
+    },
+    {
+        processImg:processimg5,
+        processData:"coding"
+    },
+    {
+        processImg:processimg6,
+        processData:"Design of web/mobile apps"
+    },
+    {
+        processImg:processimg7,
+        processData:"Deploye & go live "
+    },
+    {
+        processImg:processimg8,
+        processData:"Client handover"
+    },
+    {
+        processImg:processimg9,
+        processData:"Analogue will monitor the application tech support"
+    },
     
 ];
