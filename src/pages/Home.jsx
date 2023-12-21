@@ -25,6 +25,7 @@ import "bootstrap/dist/css/bootstrap.css"
 import "@fontsource/jost";
 import "../css/awards.css";
 import "../css/ourprocess.css"
+import "../css/features.css"
 import processImg from "../assets/Group 123.png";
 import { businessProfiles } from '../data/data';
 
@@ -144,10 +145,12 @@ function Home() {
                     </div>
                 </div>
             </section>
-            <div className="container-fluid our-process d-flex flex-column align-items-center">
-                <div className='text-center text-white'><h1>Our process</h1></div>
+            <div className="our-process d-flex flex-column align-items-center justify-content-center">
+                <div className='text-center text-white w-100 m-0 p-0'>
+                    <h1>Our process</h1>
+                </div>
                
-                <div className="img-container">
+                <div className="img-container p-0 m-0">
                 <img className='ourprocess-img'  src={processImg} alt="img-process" />
                 <div className='our-process-img-container'>
                 {ourProcess.map((item,index)=>{
@@ -164,7 +167,14 @@ function Home() {
                 {/* style={{transform: `rotate(calc(${360}deg/${9}*${index}))`}} */}
                 </div>
             </div>
+            <div className="features pt-5 d-flex flex-column justify-content-center align-items-center">
+                <div className="features-head d-flex flex-column justify-content-center align-items-center ">
+                    <h1>Features</h1>
+                    <p>we are ready to help you with these services</p>
+                </div>
             <AboutCarsoule/>
+            </div>
+            
             <section className="projectSection ">
                 <img src={abtUsBackground} alt="" className="project-section-backGround" />
                 <div className="full_section ">

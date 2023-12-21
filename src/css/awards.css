@@ -19,28 +19,33 @@ background-color: antiquewhite;
 
 }
 .imgBack{
-    width: 80% !important;
+    width: 100% !important;
     height: 100% !important;
-    
+    background-color: #D9D9D9;
      border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .imgBack img{
-    width: 70%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
 }
 .awardsdiv{
     display: block;
     width: 15%;
-    height: 25%;
+    height: 40%;
     /* background-color: yellow; */
 }
 .awardsdiv:hover{
   
    
    transform: scale(120%);
+}
+.awardsdiv:hover > .imgBack{
+    background-color: white;
+    box-shadow: 2px 2px 4px 1px #00000080;
+
 }
 .link{
     text-decoration: none;

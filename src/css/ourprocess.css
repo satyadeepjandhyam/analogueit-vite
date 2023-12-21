@@ -15,7 +15,7 @@
 .img-container{
     /* position: absolute; */
     position: relative;
-    top: 60px;
+    top: 00px;
     height: 85%;
     width: 60%;
     display: flex;
@@ -178,4 +178,13 @@
     top: 15%;
     left: 14%;
     
+}
+
+@media only screen and (min-device-pixel-ratio: 1.5),
+only screen and (-webkit-min-device-pixel-ratio: 1.5){
+    .our-process-text-container p{
+        position: absolute;
+        font-size: small;
+       
+    }
 }
