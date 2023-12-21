@@ -26,10 +26,13 @@ import EcommerceApp from './pages/our products/EcommerceApp';
 import Uiuxdesign from './pages/services/Uiuxdesign';
 import Webdevelopment from './pages/services/Webdevelopment';
 import MobileApp from './pages/services/MobileApp';
+import ScrollToTop from './components/ScrollToTop';
 function App() {
   return (
     <BrowserRouter>
+    <ScrollToTop/>
       <Routes>
+      
         <Route path='/' element={<Home/>} />
         <Route path='/about' element={<About/>} />
         <Route path='/adobexd' element={<AdobeXD/>} />
