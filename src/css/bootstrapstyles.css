@@ -1,6 +1,7 @@
 body {
   margin: 0px;
   font-family: 'Jost' !important;
+  padding-top: 100px !important;
 }
 
 .bg-primary {
@@ -53,7 +54,7 @@ body {
 .banner {
   height: 80%;
   position: relative;
-  top: 90px;
+  
   padding: 0px;
   margin: 0%;
 }

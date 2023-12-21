@@ -12,7 +12,7 @@ function AdobeXD() {
     return (
         <>
             <Nav />
-            <div className="tech-container d-flex align-content-center justify-content-end">
+            <div className="tech-container d-flex align-content-center justify-content-center">
                 <div className="container">
                     <div className="row">
                         <div className='col-4'><img className='img-fluid' src={img1} alt="img" /></div>
