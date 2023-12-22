@@ -272,16 +272,16 @@ export const serviceItems=[
     },
     {
         image:img1,
-        headding:"AI",
+        headding:"Artificial Intelligence",
         content:"We are one of the top digital marketing companies in India as we converge on the business growth of our clients"
     },
     {
         image:img1,
-        headding:"ML",
+        headding:"Meachine Learning",
         content:"We are one of the top digital marketing companies in India as we converge on the business growth of our clients"
     },{
         image:img1,
-        headding:"IOT",
+        headding:"Internet Of Things",
         content:"We are one of the top digital marketing companies in India as we converge on the business growth of our clients"
     },
     
