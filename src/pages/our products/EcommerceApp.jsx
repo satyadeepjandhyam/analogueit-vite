@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.css"
 import Contact from '../../components/contact/contact'
 import Footer from '../../components/footer/footer'
 import "../../css/technologies.css"
-import img1 from"../../assets/technologies/banner1.png"
+import img3 from"../../assets/technologies/banner1.png"
 
 function EcommerceApp() {
     return (
@@ -12,7 +12,7 @@ function EcommerceApp() {
         <div className="tech-container d-flex align-content-center justify-content-end">
         <div className="container">
                 <div className="row">
-                    <div className='col-4'><img src={img1} alt="img" /></div>
+                    <div className='col-4'><img src={img3} alt="img" /></div>
                     <div className='col-8 d-flex flex-column align-content-center justify-content-center'>
                         <h1>              
                         Create A Digital Experience For The World From Their Smart Phone

@@ -75,18 +75,18 @@ function Nav() {
           <li><NavLink to="/Logistics">Logistic App</NavLink></li>
           <li><NavLink to="/MarketingService">Marketing Service App</NavLink></li>
           </div>
-         <div> <li><NavLink href="MassageTherapist.html">Massage Therapist App</NavLink></li>
-          <li><NavLink to="/Mechanics.html">Mechanics App</NavLink></li>
-          <li><NavLink to="/Movers.html">Moviers App</NavLink></li>
-          <li><NavLink to="/Pharmacy.html">Pharmacy App</NavLink></li>
-          <li><NavLink to="/Plumbers.html">Plumbers Booking App</NavLink></li>
-          <li><NavLink to="/RealEstate.html">Real Estate App</NavLink></li>
-          <li><NavLink to="/Rental.html">Rental App</NavLink></li>
-          <li><NavLink to="/SocialMedia.html">Social Media App</NavLink></li>
-          <li><NavLink to="/Taxi.html">Taxi Booking App</NavLink></li>
-          <li><NavLink to="/TowTruck.html">Tow Truck Apps</NavLink></li>
-          <li><NavLink to="/Transportation.html">Transportation App</NavLink></li>
-          <li><NavLink to="/Tution.html">Tution App</NavLink></li></div>
+         <div> <li><NavLink to="/MassageTherapist">Massage Therapist App</NavLink></li>
+          <li><NavLink to="/Mechanics">Mechanics App</NavLink></li>
+          <li><NavLink to="/Movers">Moviers App</NavLink></li>
+          <li><NavLink to="/Pharmacy">Pharmacy App</NavLink></li>
+          <li><NavLink to="/Plumbers">Plumbers Booking App</NavLink></li>
+          <li><NavLink to="/RealEstate">Real Estate App</NavLink></li>
+          <li><NavLink to="/Rental">Rental App</NavLink></li>
+          <li><NavLink to="/SocialMedia">Social Media App</NavLink></li>
+          <li><NavLink to="/Taxi">Taxi Booking App</NavLink></li>
+          <li><NavLink to="/TowTruck">Tow Truck Apps</NavLink></li>
+          <li><NavLink to="/Transportation">Transportation App</NavLink></li>
+          <li><NavLink to="/Tution">Tution App</NavLink></li></div>
         </ul>
       </li>
       <li className='nav-item p-1'><a className='nav-link d-flex flex-column align-items-center justify-content-center text-white' href="portfolio.html"><FaComputer className='icon_i h3'/> Portfolio</a></li>
