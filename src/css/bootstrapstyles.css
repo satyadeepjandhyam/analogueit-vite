@@ -842,7 +842,7 @@ font-weight: 400px;
   margin: 0px;
 }
 
-/* @media only screen and (min-width: 1024px) and   (max-width: 1279px){
+ @media only screen and (min-width: 1024px) and   (max-width: 1279px){
   .navbar-nav .nav-link{
 
   font-size: 10px;
@@ -1226,7 +1226,7 @@ font-weight: 400px;
   -webkit-box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.32); 
 box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.32);
 }
-} */
+} 
 /* @media only screen and (min-width:1024px) and (max-width:1199px){
   .cardsBody .card-transform-left-to-right{
     height: 300px;
@@ -1870,8 +1870,12 @@ only screen and (-webkit-min-device-pixel-ratio: 1.75) {
 
   }
 }
-
-/* @media screen and (min-width:1400px)and (max-width:2560px){
+ @media screen and (min-width:1400px)and (max-width:2560px){
+  body {
+    margin: 0px;
+    font-family: 'Jost' !important;
+    padding-top: 60px !important;
+  }
   .Headder{
     width: 100%;
     height:10%;
@@ -2005,4 +2009,4 @@ only screen and (-webkit-min-device-pixel-ratio: 1.75) {
     }
   }
 
-} */
+} 
