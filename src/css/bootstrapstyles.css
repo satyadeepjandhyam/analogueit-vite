@@ -846,7 +846,7 @@ font-weight: 400px;
   font-size: 10px;
   
   }
-  .exp{
+  /* .exp{
     position: absolute;
     z-index: 10;
     top: 18% !important;
@@ -855,11 +855,11 @@ font-weight: 400px;
     display: flex;
     align-items: start;
     justify-content: end;
-  }
-  .exp .banner_frame{
+  } */
+  /* .exp .banner_frame{
    
     height: 100%;
-  }
+  } */
 
   .baner-sub-container{
      width: 40%;
@@ -1878,7 +1878,7 @@ only screen and (-webkit-min-device-pixel-ratio: 1.75) {
   body {
     margin: 0px;
     font-family: 'Jost' ;
-    padding-top: 10% ;
+    padding-top: 10%;
   }
   .Headder{
     width: 100%;
@@ -1889,6 +1889,7 @@ only screen and (-webkit-min-device-pixel-ratio: 1.75) {
     flex-direction: row;
     align-items: center;
     justify-content: start !important;
+    
 }
 .Headder .logo{
 
