@@ -10,8 +10,8 @@ import "bootstrap/dist/css/bootstrap.css"
 function Nav() {
     return (
         <>
-<header id="header" className='fixed-top Headder bg-primary m-0 '>
-  <div className="container-fluid d-flex align-items-center justify-content-evenly  gap-5">
+<header id="header" className='fixed-top Headder bg-primary m-0 p-0'>
+  <div className="container-fluid d-flex align-items-center justify-content-evenly  gap-5 p-0 m-0">
   <div className="logo">
       
     <a className='w-10 h-10' href="index.html"><img className='img-fluid' src={logo1} alt='home' /></a>
@@ -111,7 +111,7 @@ function Nav() {
         <li><a href="#">Mobile Development</a></li>
         <li><a href="#">Digital Development</a></li>
       </ul> */}
-      <li className='nav-item p-1'><a className='nav-link d-flex flex-column align-items-center justify-content-center text-white' href="contact.html"><BiMobileAlt className='icon_i h3'/>Contact Us</a></li>
+      <li className='nav-item p-1'><NavLink className='nav-link d-flex flex-column align-items-center justify-content-center text-white' to="/contactUs"><BiMobileAlt className='icon_i h3'/>Contact Us</NavLink></li>
     </ul>
     <i className="bi bi-list mobile-nav-toggle" />
   </nav>

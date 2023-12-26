@@ -3,6 +3,7 @@ import './App.css';
 import{BrowserRouter,Routes,Route} from 'react-router-dom'
 import Home from './pages/Home';
 import About from './pages/About';
+import ContactUs from './pages/ContactUs';
 import AdobeXD from './pages/technologies/AdobeXD';
 import Aws from './pages/technologies/Aws';
 import Angular from './pages/technologies/Angular';
@@ -63,6 +64,7 @@ function App() {
       
         <Route path='/' element={<Home/>} />
         <Route path='/about' element={<About/>} />
+        <Route path='/contactUs' element={<ContactUs/>} />
         <Route path='/adobexd' element={<AdobeXD/>} />
         <Route path='/aws' element={<Aws/>}/>
         <Route path='/angulardev' element={<Angular/>}/>

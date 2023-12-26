@@ -1,7 +1,7 @@
 body {
   margin: 0px;
   font-family: 'Jost' !important;
-  padding-top: 100px !important;
+  padding-top: 70px !important;
 }
 
 /* p{
@@ -65,8 +65,6 @@ body {
 
 .banner {
   height: 80%;
-  position: relative;
-  
   padding: 0px;
   margin: 0%;
 }
@@ -553,7 +551,7 @@ font-weight: 400px;
 
 .about {
   position: relative;
-  top: 80px !important;
+  top: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1366,6 +1364,7 @@ box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.32);
 } */
 @media only screen and (min-device-pixel-ratio: 1.25),
 only screen and (-webkit-min-device-pixel-ratio: 1.25) {
+
   .exp {
     position: absolute;
     z-index: 10;
@@ -1403,8 +1402,8 @@ only screen and (-webkit-min-device-pixel-ratio: 1.25) {
 only screen and (-webkit-min-device-pixel-ratio: 1.5) {
   body {
     margin: 0px;
-    font-family: 'Jost' !important;
-    padding-top: 90px !important;
+    font-family: 'Jost';
+    padding-top: 90px ;
   }
   .exp {
     position: absolute;
@@ -1878,8 +1877,8 @@ only screen and (-webkit-min-device-pixel-ratio: 1.75) {
  @media screen and (min-width:1400px)and (max-width:2560px){
   body {
     margin: 0px;
-    font-family: 'Jost' !important;
-    padding-top: 60px !important;
+    font-family: 'Jost' ;
+    padding-top: 10% ;
   }
   .Headder{
     width: 100%;
@@ -1894,7 +1893,7 @@ only screen and (-webkit-min-device-pixel-ratio: 1.75) {
 .Headder .logo{
 
     width: 30%;
-    height: 100px;
+    height: 100%;
 }
 .Headder .logo a img{
   height: 90px;
