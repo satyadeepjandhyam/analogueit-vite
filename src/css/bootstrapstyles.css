@@ -1401,6 +1401,11 @@ only screen and (-webkit-min-device-pixel-ratio: 1.25) {
 
 @media only screen and (min-device-pixel-ratio: 1.5),
 only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+  body {
+    margin: 0px;
+    font-family: 'Jost' !important;
+    padding-top: 90px !important;
+  }
   .exp {
     position: absolute;
     z-index: 10;
@@ -1927,7 +1932,7 @@ only screen and (-webkit-min-device-pixel-ratio: 1.75) {
     height: 100%;
    
 }
-.banner_welcome{
+/* .banner_welcome{
    color: white;
     width: 50%;
     font-size: 120px !important;
@@ -1968,9 +1973,9 @@ only screen and (-webkit-min-device-pixel-ratio: 1.75) {
   }
   .exp .banner_frame{
     max-height: 100%;
-  }
+  } */
 
-  .animation_page{
+  /* .animation_page{
     position: absolute;
     z-index: -0;
     top: 72%;
@@ -2007,6 +2012,6 @@ only screen and (-webkit-min-device-pixel-ratio: 1.75) {
     100%{
       transform: translateX(-300%);
     }
-  }
+  } */
 
 } 
