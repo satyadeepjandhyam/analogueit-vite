@@ -85,7 +85,34 @@ function Home() {
         },
 
     ];
+const [secIncriment,setSecIncriment]=useState(0);
 
+const getIncriment=()=>{
+    const code=24;
+            
+            for( let i=0;i<24;i++){
+                
+                setInterval(()=>{console.log(i+"yes")
+                // setSecIncriment(i)
+            }
+                ,2000)
+            }
+            // do {
+            //    setTimeout(()=>{setSecIncriment(24)},1000)
+            
+            // } while (code===24);
+
+}
+    // useEffect(
+    //     ()=>{
+    //         let code=24;
+    //         let i=0
+    //         do {
+    //            setTimeout(setSecIncriment(i===24?i=0:i++),1000)
+                
+    //         } while (code===24);
+    //     },[]
+    //     );
     
 
     return (
@@ -93,23 +120,26 @@ function Home() {
         <Nav/>
         <section className="banner p-0 container-fluid  m-0 ">
             <img className='b_img  p-0  m-0' src={bannerImg1} alt="bannerImg1" />
-           <div className="banner-container ">
+           <div className="banner-container w-100 h-100  d-flex justify-content-center align-items-center">
                <div className="baner-sub-container">
                <h1 className='banner_welcome bold font-weight-bold'>WELCOME TO</h1>
                 <img className='banner_logo' src={logo1} alt="logo" />
                </div>
                 <button className='banner_btn '>KNOW MORE</button>
-                <div className="exp">
+                {/* <div className="exp">
                     <img className='banner_frame' src={Frame} alt="logo" />
                     
-                </div>
-                <div className='animation_page'>
-            <div className="animationDiv">
-                    {bannerImages.map((items,i)=>{return <img src={items.image} key={i} alt="htmlpng" />})}
+                </div> */}
+                {/* <div className='animation_page'>
+                    <div className="animationDiv">
+                            {bannerImages.map((items,i)=>{return <img src={items.image} key={i} alt="htmlpng" />})}
+                     </div>
+                </div> */}
+                <div className="circular-container flex-row d-flex align-items-center justify-content-center" onLoad={getIncriment()}>
+                    {bannerImages.map((items,i)=>{return <div className='circular-object' style={{transform: `rotate(calc(${360}deg/${24} * ${i+secIncriment}))`}}><img className='object-img'  src={items.image} key={i} alt="htmlpng" /></div>})}
                 </div>
            </div>
-           </div>
-            
+           
         </section>
             <section ref={aboutHeadding} className="about p-0 m-0">
                 <div className={isAboutHeaddingRevealed? "about_headding":""} >
@@ -168,11 +198,11 @@ function Home() {
                 </div>
             </div>
             <div className="features pt-5 d-flex flex-column justify-content-center align-items-center">
-                <div className="features-head d-flex flex-column justify-content-center align-items-center ">
+                <div className="features-head d-flex flex-column justify-content-center align-items-center" >
                     <h1>Features</h1>
                     <p>we are ready to help you with these services</p>
                 </div>
-            <AboutCarsoule/>
+                <AboutCarsoule/>
             </div>
             
             <section className="projectSection ">

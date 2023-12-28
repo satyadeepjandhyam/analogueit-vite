@@ -27,8 +27,9 @@
 
 }
 .carosel-mobile-swiper{
-  width: 100%;
-  height: 100%;
+  width: 100% !important;
+  height: 100% !important;
+  /* background-color: green; */
 }
 .carosel-mobile-swiper .carosel-mobile-slide{
   display: flex;
@@ -40,7 +41,7 @@ margin: 0px;
 .carosel-mobile-swiper .carosel-mobile-slide img{
   height: 80% !important;
   width: 80% !important;
-
+  object-fit: contain;
 }
 /* .desktop-carsole .swiper {
     width: 80%;
@@ -143,9 +144,20 @@ only screen and (-webkit-min-device-pixel-ratio: 1.5) {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100% !important;
+    width: 100% ;
     height: 80%;
     margin: 0px;
     /* background-color: red; */
+  }
+}
+@media screen and (min-width:1400px) and (-webkit-min-device-pixel-ratio: 2){
+ 
+  .carosel-mobile-swiper .carosel-mobile-slide{
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0px;
   }
 }

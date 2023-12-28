@@ -101,10 +101,27 @@ function Desktopcarsole() {
                 </div>
                 <div className="carosel-desktop-body m-0 p-0">
                    <Swiper
-                    slidesPerView={1}
-                    spaceBetween={30}
+                    
                     pagination={{
                       clickable: true,
+                    }}
+                    breakpoints={{
+                        640: {
+                            slidesPerView: 1,
+                            spaceBetween: 30,
+                          },
+                          768: {
+                            slidesPerView: 1,
+                            spaceBetween: 30,
+                          },
+                          1024: {
+                            slidesPerView: 1,
+                            spaceBetween: 30,
+                          },
+                          1400: {
+                            slidesPerView: 1,
+                            spaceBetween: 100,
+                          },
                     }}
                     // grabCursor={true}
                     effect={'creative'}

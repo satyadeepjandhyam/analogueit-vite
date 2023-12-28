@@ -194,5 +194,26 @@
       height: 80%;
      opacity: 0.5;
      transition-duration: 0.5;
+     
+    }
+  }
+
+  @media screen and (min-width:1400px) and (-webkit-min-device-pixel-ratio: 2) {
+    .caroselSlide .carosel-active-image{
+      width: 300px;
+      height: 120%;
+     pointer-events: none;
+     
+    }
+    .caroselSlide .carosel-image{
+      width: 250px;
+      height: 100%;
+    }
+    .carosel-image-two{
+      width: 200px !important;
+      height: 80%;
+     opacity: 0.5;
+     transition-duration: 0.5;
+     
     }
   }
