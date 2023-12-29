@@ -237,10 +237,10 @@ const getIncriment=()=>{
                             <h3 className='border-black fw-bold'>Skip The Big Promises. Hire The Best Developers Backed By Developers Backed By Accolades.</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maiores pariatur aliquid. Minus, odio? Eligendi repellendus, doloribus nesciunt nobis iusto molestiae fugiat est impedit nisi voluptatibus. Eos cupiditate iusto optio!</p>
                         </div>
-                        <div className="awardright  d-flex flex-wrap align-items-center justify-content-evenly">
-                            {businessProfiles.map((items,i)=>{return  <a key={items.profileName+i} className="link awardsdiv  d-flex flex-column align-items-center justify-content-center" href={items.profileLink}> 
-                            <div className='imgBack' ><img src={items.image} alt="" /></div>
-                            <p>{items.profileName}</p>
+                        <div className="awardright  d-flex flex-wrap align-items-center justify-content-evenly row-gap-2">
+                            {businessProfiles.map((items,i)=>{return  <a key={items.profileName+i} className="link awardsdiv d-flex flex-column align-items-center justify-content-center p-0 m-0" href={items.profileLink}> 
+                            <div className='imgBack rounded-circle' ><img src={items.image} alt="" /></div>
+                            <p className='p-0 m-0'>{items.profileName}</p>
                          </a>})}
                                           
                         </div>
